@@ -7,9 +7,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <style type="text/css">
+               
+              html,body,header,footer,hgroup,nav,article,section,figure,figcaption,h1,h2,h3,ul,li,div,p,img
+              {
+               margin: 0;
+               padding: 0;
+               font-size: 100%;
+               vertical-align: baseline;
+               border: 0;
+              }
+           
               body
               {
-                  background-color: #ebdddd;
+                  background-color: #e0e0e0;
                   margin: 0 auto;
               }
              
@@ -18,19 +28,13 @@
                   overflow-wrap: break-word;
                   font-family: "trebuchet ms",arial,helvetica;
               }
-           
-            .paragrafi
+
+            .guri
             {
-               color: navy;
-               float: left;
-               width: 19%; 
+                background-color: #333333;
+                font-family: "trebuchet ms",arial,helvetica;
+                color:white;
             }
-            .hapsira
-            {
-                line-height: 65px;
-            }
-            .majtas{margin-right: 2px;}
-            .djathtas{margin-left: 2px;}
              h1{
                font-size:5em;
                font-weight: normal;
@@ -41,35 +45,40 @@
             h2{
                font-family: 'Titillium Web', sans-serif;
             }
-              .p1{
+           .p1{
                 background-color: #333333;
                 font-family: "trebuchet ms",arial,helvetica;
               }
                .a{text-decoration: none; color: white;}
                 a{text-decoration: none; color: black;}
                 a:hover{background-color: grey;}
+                
+                footer
+                {
+                 font-style: oblique;   
+                }
              
         </style>
     </head>
     <body>
        <header class="p1" > 
-            <small><a class="a" href="#">Sing Up |</a></small> 
-            <small><a class="a" href="#">Log In |</a></small> 
-            <small><a class="a" href="#">RSS Feeds |</a></small> 
-            <small><a class="a" href="#">Archived News</a></small>
+           <small><a class="a" href="#">Regjistrohu |</a></small>
+            <small><a class="a" href="#"> Futu |</a></small> 
+            <small><a class="a" href="#"> RSS |</a></small> 
+            <small><a class="a" href="#"> Lajme t&euml; vjetra</a></small>
         </header>
     <center>
         <h1>Revista Drita</h1>
     </center>
     <center><h2> Te gjitha lajmet e fundit nga bota</h2></center>
     <hr>
-    <p><a href="#">Homepage</a> &nbsp;&nbsp; <a href="#">Sport</a> &nbsp;&nbsp;
-        <a href="#">News</a> &nbsp;&nbsp;<a href="#"> About </a> </p>
+    <p><small><a href="#">Sht&euml;pia</a> &nbsp;&nbsp; <a href="#">Sporti</a> &nbsp;&nbsp;
+            <a href="#">Lajme</a> &nbsp;&nbsp;<a href="#"> Rreth </a> </small> </p>
     <hr>
     <figure>
             <img src="https://www.duanestreethotel.com/wp-content/uploads/2017/08/GettyImages-494607942-1.jpg"
                  alt="centralpark" style="width:500px;height:320px;"/>
-            <figcaption>Parku qendror ne qytetin e New Yorkut </figcaption>
+            <figcaption>Parku qendror n&euml; qytetin e Nju Jorkut </figcaption>
     </figure>
     <hr>
     <figure>
@@ -80,32 +89,29 @@
     <figure>
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Sunset_2007-1.jpg"
              alt="sunset" style="width:60px;height:60px">
-        <figcaption>Perendimi i Diellit</figcaption>
+        <figcaption>Per&euml;ndimi i Diellit</figcaption>
     </figure>
     <figure>
         <img src="https://cdn.contrastly.com/wp-content/uploads/sun.jpg"
              alt="mesdite" style="width:60px;height:60px">
-        <figcaption>Dielli ne mesdite</figcaption>
+        <figcaption>Dielli n&euml; mesdit&euml;</figcaption>
     </figure>
     <hr>
-    <p><a href="#">Finacat</a> &nbsp;&nbsp; <a href="#">Sportet</a> &nbsp;&nbsp;
-       <a href="#">Lajmet</a> &nbsp;&nbsp;<a href="#"> Muzika dhe Arti </a> 
-    </p>
+    <p><a href="#" class="guri">Financat</a> &nbsp;&nbsp; <a href="#" class="guri">Sportet</a> &nbsp;&nbsp;
+       <a href="#" class="guri">Lajmet</a> &nbsp;&nbsp;<a href="#" class="guri"> Muzika dhe Arti </a> 
+    </p><br>
     <figure>
         <img src="https://handluggageonly.co.uk/wp-content/uploads/2017/12/Hand-Luggage-Only-10-2.jpg"
              alt="Figura me e shikuar" style="width:122px;height:80px">
-        <figcaption>Figura me e shikuar</figcaption>
+        <figcaption>Figura m&euml; e shikuar</figcaption>
     </figure>
     <hr>
-        <p class="paragrafi majtas">Zgjedhjet Studentore</p>
-        <p class="paragrafi djathtas">Zgjedhjet e Bordit</p>
-        <p class="paragrafi majtas">Zgjedhjet e Dekanatit</p>
-        <p class="paragrafi djathtas">Zgjedhjet e Rektoratit</p>
-        <p class="paragrafi djathtas">Zgjedhjet e Ministris&euml; </p>
-        <br class="hapsira">
+        <p><small><a href="#">Zgjedhjet Studentore</a> &nbsp;&nbsp; <a href="#">Zgjedhjet e Bordit</a> &nbsp;&nbsp;
+            <a href="#">Zgjedhjet e Dekanatit</a> &nbsp;&nbsp;<a href="#">Zgjedhjet e Rektoratit</a>&nbsp;&nbsp;
+            <a href="#">Zgjedhjet e Ministris&euml;</a></small> </p>
     <footer>
              <hr>
-             <p>Te drejtat e rezervuara &copy;Fiek2018,Grupi 12</p>
+             <p><small>Te drejtat e rezervuara &copy;Fiek2018,Grupi 12</small></p>
     </footer>
     </body>
 </html>

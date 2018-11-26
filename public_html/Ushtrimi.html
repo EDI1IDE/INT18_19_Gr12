@@ -16,11 +16,13 @@
                vertical-align: baseline;
                border: 0;
               }
-           
+              header{
+                  padding: 7px;
+              }
               body
               {
                   background-color: #e0e0e0;
-                  margin: 0 auto;
+                  margin: 0em 1em 0em 1em;
               }
              
               p
@@ -48,6 +50,7 @@
            .p1{
                 background-color: #333333;
                 font-family: "trebuchet ms",arial,helvetica;
+                margin: 0em -1em 0em -1em;
               }
                .a{text-decoration: none; color: white;}
                 a{text-decoration: none; color: black;}
@@ -57,12 +60,33 @@
                 {
                  font-style: oblique;   
                 }
-             
+                .foto1{
+                    margin: 2em 0em 2em 0em;
+                }
+                .foto2{
+                    position: relative;
+                    right: 530px;
+                    margin: 2em 0em 2em 2em;
+                    
+                    
+                }
+                .f2{
+                    padding: 0.25em;
+                    border: solid 1px #999999;
+                }
+                .F2{
+                    float: right;
+                    
+                }
+                .pjesa1{
+                    display: flex;
+                    justify-content:space-between;
+                }
         </style>
     </head>
     <body>
        <header class="p1" > 
-           <small><a class="a" href="#">Regjistrohu |</a></small>
+           <small><a class="a" href="#">&emsp;&nbsp;Regjistrohu |</a></small>
             <small><a class="a" href="#"> Futu |</a></small> 
             <small><a class="a" href="#"> RSS |</a></small> 
             <small><a class="a" href="#"> Lajme t&euml; vjetra</a></small>
@@ -75,11 +99,19 @@
     <p><small><a href="#">Sht&euml;pia</a> &nbsp;&nbsp; <a href="#">Sporti</a> &nbsp;&nbsp;
             <a href="#">Lajme</a> &nbsp;&nbsp;<a href="#"> Rreth </a> </small> </p>
     <hr>
-    <figure>
+    <div class="pjesa1">
+    <figure class="foto1">
             <img src="https://www.duanestreethotel.com/wp-content/uploads/2017/08/GettyImages-494607942-1.jpg"
                  alt="centralpark" style="width:500px;height:320px;"/>
             <figcaption>Parku qendror n&euml; qytetin e Nju Jorkut </figcaption>
-    </figure>
+    </figure>       
+        <figure class="foto2">
+        <img  class="f2" src="https://www.duanestreethotel.com/wp-content/uploads/2017/08/GettyImages-494607942-1.jpg" alt="Fig1"
+             style="width:100px;height:100px;">
+        <h3 class="F2">&nbsp; Fotoja e pare djathtas</h3>
+        </figure>
+    </div>      
+   
     <hr>
     <figure>
         <img src="http://www.johnfhunterphotography.com/wp-content/uploads/2017/08/K-60-website-450x450.jpg"
@@ -98,8 +130,8 @@
     </figure>
     <hr>
     <p><a href="#" class="guri">Financat</a> &nbsp;&nbsp; <a href="#" class="guri">Sportet</a> &nbsp;&nbsp;
-       <a href="#" class="guri">Lajmet</a> &nbsp;&nbsp;<a href="#" class="guri"> Muzika dhe Arti </a> 
-    </p><br>
+        <a href="#" class="guri">Lajmet</a> &nbsp;&nbsp;<a href="#" class="guri"> Muzika dhe Arti </a>
+    </p><hr>
     <figure>
         <img src="https://handluggageonly.co.uk/wp-content/uploads/2017/12/Hand-Luggage-Only-10-2.jpg"
              alt="Figura me e shikuar" style="width:122px;height:80px">

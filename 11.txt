@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Ushtrime te ndryshme</title>
+  <!----perdorimi i css code me inline elements--->
+</head>
+
+<body>
+    <!----perdorimi i css code me inline elements--->
+    <p style="font-famly:arial">The world is full of fascinating places.</p>
+</body>
+
+</html>

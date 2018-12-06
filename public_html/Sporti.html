@@ -10,7 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style type="text/css">
-             
+             *{margin: 0;padding: 0;}
               body{
               font-family: Georgia,"Times New Roman";
               background-color: #ffffff;
@@ -37,18 +37,64 @@ and open the template in the editor.
                font-size: 18px;
                 border-bottom: solid 1pt #999999;
               }
+              .top-bar{
+                  background-color: #000;
+                  display: -webkit- box;
+                  display: -webkit-flex;
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+              }
+              .emri{
+                  color: #fff;
+                  -webkit-box-flex: 1;
+                  -webkit-flex:1;
+                  flex: 1;
+                  font-size: 40px;
+                  padding: 18px;
+                  text-transform: uppercase;
+              }
+              .menu{
+                  -webkit-flex: 3;
+                  -moz-flex: 3;
+                  -ms-flex: 3;
+                  flex: 3;
+              }
+              .menu{
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: flex;
+                  list-style: none;
+                  margin-top: 30px;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                  -webkit-flex-flow:row wrap;
+                  flex-flow: row wrap;
+              }
+              .menu ul li{
+                  -webkit-box-flex: 1;
+                  -webkit-flex: 1;
+                  flex: 1;
+                  padding: 20px;
+                  display: inline;
+              }
+              .menu ul li a{
+                  color: #fff;
+                  font-size: 20px;
+                  text-decoration: none;
+              }
               .a{
                   color: white;
               }
               header{
                 color:white;
-                background-color: #3d6271;
-                padding: 0.5em;
-                margin: 0em -0.4em 0em -0.4em;
+                background-color: #666666;
+                padding: 0.4em;
+                margin: auto;
               }
               footer{
                 color:white;
-                background-color: #3d6271;
+                background-color: #666666;
               }
               nav{
                 background-color: #e3e3ef;
@@ -86,22 +132,21 @@ and open the template in the editor.
             <small><a class="a" href="#"> RSS |</a></small> 
             <small><a class="a" href="#"> Lajme t&euml; vjetra</a></small>
         </header>
-        <center>
-        <h1>Sporti</h1>
-    </center>
-    <center><h2> Te gjitha lajmet e fundit t&euml; sportit nga vendi dhe bota</h2></center>
-    <hr>
-     <nav>
-            <div id="mainMenu">
+        <div class="top-bar">
+            <div class="emri">Sport</div>
+            <div class="menu">
                 <ul>
-                    <li><a href="#" class="t">Lajmet e fundit</a></li>
-                    <li><a href="#" class="t">Futboll</a></li>
-                    <li><a href="#" class="t">Basketboll</a></li>
-                    <li><a href="#" class="t">Tenis</a></li>
-                    <li><a href="#" class="t">Sporte t&euml; tjera</a></li>
+                    <li><a href="#">Lajmet e fundit</a></li>
+                    <li><a href="#">Futboll</a></li>
+                    <li><a href="#">Basketboll</a></li>
+                    <li><a href="#">Tenis</a></li>
+                    <li><a href="#">Golf</a></li>
+                    <li><a href="#">Volejboll</a></li>
                 </ul>
             </div>
-     </nav><hr>
+        </div>
+    
+     
      <figure>
             <img src="http://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F0910%2Fr429092_1296x729_16-9.jpg"
                  alt="kosova" style="width:500px;height:320px;"/>

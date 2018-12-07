@@ -26,9 +26,10 @@ and open the template in the editor.
               padding: 0.8em;
               }
               .ron{
-                  font-size:20px;
-                  color:black;
-                  background-color: #a9a9ad;
+                  font-size:15px;
+                  color:white;
+                  background-color: #000;
+              
                  
               }
               h2{
@@ -40,6 +41,18 @@ and open the template in the editor.
               h3{
                font-size: 18px;
                 border-bottom: solid 1pt #999999;
+              }
+              /*stilizimi i linqeve*/
+               /*selektoret pseudo-klase*/
+              a:link{
+                font-weight: bold;
+                color: #3d6271;
+              }
+              a:visited{
+                color: #e3e3ef;
+              }
+              a:hover{
+                background-color: #ffcccc;
               }
               .top-bar{
                   background-color: #000;
@@ -95,13 +108,13 @@ and open the template in the editor.
               }
               header{
                 color:white;
-                background-color: #666666;
+                background-color: #373737;
                 padding: 0.4em;
                 
               }
               footer{
                 color:white;
-                background-color: #666666;
+                background-color: #373737;
               }
               nav{
                 background-color: #e3e3ef;
@@ -123,13 +136,20 @@ and open the template in the editor.
                   color: black;
               }
               .Lojtaret{
-                  margin: 1em 0em 1em 1em;
-                  
-          
+                  margin: 1em 1em 1em 1em;
+                  display: flex;
+                  flex:1;
+                  justify-content: space-between;
+              }
+              .lojtaret{
+                  padding: 0.25em;
+                  border: solid 1px #999999;
                   
               }
               .ron1{
+                  
                   font-weight: bold;
+                  color: black;
                   
               }
               div img{
@@ -186,20 +206,36 @@ and open the template in the editor.
      </div>
      <div class="Lojtaret">
          <figure>
-         <img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/07/10/16/cristiano-ronaldo-wave-2017.jpg?w968"
+         <img class="lojtaret" src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/07/10/16/cristiano-ronaldo-wave-2017.jpg?w968"
               alt="ronaldo" style="width:150px; height: 100px;">
          <figcaption class="ron1">Cristiano Ronaldo</figcaption>
          </figure>
          <figure>
-         <img src="http://www3.pictures.zimbio.com/gi/Lionel+Messi+Argentina+vs+Croatia+Group+2018+z5NAKnHnHyEl.jpg"
+         <img class="lojtaret" src="http://www3.pictures.zimbio.com/gi/Lionel+Messi+Argentina+vs+Croatia+Group+2018+z5NAKnHnHyEl.jpg"
               alt="messi" style="width:150px; height: 100px;">
          <figcaption class="ron1">Lionel Messi</figcaption>
+         </figure>
+         <figure>
+         <img class="lojtaret" src="https://pbs.twimg.com/profile_images/1024824376406024192/XWNBgfCX_400x400.jpg"
+              alt="messi" style="width:150px; height: 100px;">
+         <figcaption class="ron1">Neymar Jr</figcaption>
+         </figure>
+         <figure>
+         <img class="lojtaret" src="https://the18.com/sites/default/files/styles/featured_mobile__621x709_/public/feature-images/20171220-The18-Image-Kylian-Mbappe-Wise-Beyond-His-Years.jpeg?itok=ztw5N0Zb"
+              alt="messi" style="width:150px; height: 100px;">
+         <figcaption class="ron1">Kylian Mbappe</figcaption>
+         </figure>
+         <figure>
+         <img class="lojtaret" src="https://futaa.com/images/full/eden-hazard-chelsea_1kznm90y6aigk1qd33g9ud94lx.jpg"
+              alt="messi" style="width:150px; height: 100px;">
+         <figcaption class="ron1">Eden Hazard</figcaption>
          </figure>
          
          
      </div>
      <footer>
-            <p><a href="#">Home</a> | <a href="#">Catalogu</a></p>
+            <p><a href="#">Home</a> | <a href="#">Catalogu</a> |
+            <a href="#">Arikvi</a></p>
              <p>Te drejtat e rezervuara &copy;Fiek2018</p>
      </footer>      
      

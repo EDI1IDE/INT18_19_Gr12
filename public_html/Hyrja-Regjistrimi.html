@@ -2,8 +2,6 @@
 <html>
     <head>
 	<title>Hyrja-Regjistrimi</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <style>
              *
               {
@@ -12,21 +10,34 @@
                font-size: 100%;
                vertical-align: baseline;
                border: 0;
+              }
+              label, button
+              {
+               font-size:1em;
+               font-weight: normal;
+               font-family: "Goudy Old Style";
+              }
                
         </style>
     </head>
     
-    <body>
+    <body style="background: 
+              url(http://images5.fanpop.com/image/photos/26900000/Black-Tree-Wallpaper-black-26901002-1600-1200.jpg);
+              background-size: 100%">
+       
         <div>
-            <center><h1>>Hyrja</h1></center>
+            <center><h1 style = "color:white">Hyrja</h1></center>
         </div>
 	<div>
             <center>
-			<label for="E-Posta">E-Posta: </label><input id="E-Posta" name="E-Post" autofocus required>
+			<label for="E-Posta" style = "color:red">E-Posta: </label>
+                        <input id="E-Posta" name="E-Post" autofocus required style="background-color: transparent; color: cyan">
 			<br/>
-                        <label for="Fjalkalimi">Fjalkalimi: </label><input id="Fjalkalimi" name="Fjalkalimi" required>
+                        <label for="Fjalkalimi" style = "color:red">Fjalkalimi: </label>
+                        <input id="Fjalkalimi" name="Fjalkalimi" required style="background-color: transparent; color: cyan">
 			<br/>
-			<input type="submit">  
+                       <button type="submit" style="color: red; background-color: transparent;">Futu</button>&ensp; &ensp; &ensp;
+                       <button type="submit" style="color: red; background-color: transparent;">Regjistro</button>        
             </center>>                        
 	</div>
     </body>

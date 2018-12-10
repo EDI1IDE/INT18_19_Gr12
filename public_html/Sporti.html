@@ -33,9 +33,7 @@ and open the template in the editor.
                  
               }
               h2{
-                font-size: 14px;
-                background-color: #999999;
-                padding: 10px;
+                
                 
               }
               h3{
@@ -52,7 +50,7 @@ and open the template in the editor.
                 color: #e3e3ef;
               }
               a:hover{
-                background-color: #ffcccc;
+                  background-color: thistle;
               }
               .top-bar{
                   background-color: #000;
@@ -145,21 +143,19 @@ and open the template in the editor.
               .pjesa2{
                   flex: 1;
               }
+              
+              
               .Lojtaret{
-                  margin: 1em 1em 1em 1em;
+                  margin: 1em -2em 1em 3em;
                   display: flex;
                   flex:1;
                   justify-content: space-between;
+                  
+                  
               }
               .lojtaret{
                   padding: 0.25em;
                   border: solid 1px #999999;
-                  
-              }
-              .ron1{
-                  
-                  font-weight: bold;
-                  color: black;
                   
               }
               .k1{
@@ -172,8 +168,22 @@ and open the template in the editor.
                   margin-bottom: 0.5em;
                   font-weight: bold;
               }
+              .latest{
+                  display: flex;
+                  flex-direction: row;
+              }
+              .latest:before,.latest:after{
+                  content: "";
+                  flex: 1 1;
+                  border-bottom: 1px solid red;
+                  margin: auto;
+              }
+              h2{
+                  margin: 1em 0em 1em 0em;
+              }
               footer{
                     padding: 0.5em;
+                    margin: 2em 3em 0em 3em;
     
              }
               footer p{
@@ -201,6 +211,7 @@ and open the template in the editor.
                 </ul>
             </div>
         </div>
+        <h2 class="latest">Lajmet e fundit</h2>   
         <div class="klasa1">
      <div class="pjesa1">   
      <figure class="fig1">
@@ -220,24 +231,24 @@ and open the template in the editor.
         <hr>
      <div class="klasa2">
      <figure class="fig1">
+            <img src="https://cdn.cnn.com/cnnnext/dam/assets/150330124811-shaqiri-2-exlarge-169.jpg"
+                 alt="ks" style="width:500px;height:320px;"/>
+            <figcaption>Zvicra p&euml;rmbys&euml; Belgjiken me 5 gola, Shaqiri spektakolar</figcaption>
+     </figure>
+     </div>
+        <h2 class="latest">Lajmet m&euml; t&euml; lexuara</h2>
+     <div class="klasa3">
+     <figure class="fig2">
             <img  src="http://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F0910%2Fr429092_1296x729_16-9.jpg"
                  alt="kosova" style="width:500px;height:320px;"/>
             <figcaption>Kosova madh&euml;shtore, kualifikohet n&euml;  gjysm&euml; finale t&euml; 
                 Lig&euml;s s&euml;  Kombeve </figcaption>
      </figure>
      </div>
-        <hr>
-     <div class="klasa3">
-     <figure class="fig2">
-            <img src="https://cdn.cnn.com/cnnnext/dam/assets/150330124811-shaqiri-2-exlarge-169.jpg"
-                 alt="ks" style="width:500px;height:320px;"/>
-            <figcaption>Zvicra p&euml;rmbys&euml; Belgjiken me 5 gola, Shaqiri spektakolar</figcaption>
-     </figure>
-     </div>
-        <hr>
      <div>
-         <h1 class="ron">Lojtar&euml;t m&euml; t&euml; mir&euml;</h1>
+         <h2 class="latest">Lojtar&euml;t m&euml; t&euml; mir&euml;</h2>
      </div>
+     <div class="best">
      <div class="Lojtaret">
          <figure>
          <img class="lojtaret" src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/07/10/16/cristiano-ronaldo-wave-2017.jpg?w968"
@@ -264,9 +275,13 @@ and open the template in the editor.
               alt="messi" style="width:150px; height: 100px;">
          <figcaption class="ron1">Eden Hazard</figcaption>
          </figure>
+         <div class="lajmet">
+             
+         </div>
          
          
      </div>
+    </div>     
      <footer>
             <p><a href="#">Home</a> | <a href="#">Catalogu</a> |
             <a href="#">Arikvi</a></p>

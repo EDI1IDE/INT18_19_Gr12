@@ -183,6 +183,21 @@
               -webkit-transform: translateY(10px);
               transform: translateY(10px);
               }
+              .fotol 
+              {
+              -webkit-transform: perspective(1px) translateZ(0);
+              box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+              -webkit-transition-duration: 0.4s;
+              transition-duration: 0.4s;
+              -webkit-transition-property: transform;
+              transition-property: transform;
+              }
+              .fotol:hover, .fotol:focus, .fotol:active 
+              {
+              -webkit-transform: scale(0.6);
+              transform: scale(0.6);
+              }
+
         </style>
     </head>
     
@@ -291,22 +306,22 @@
        <a href="#" class="guri" style="position:relative; left:24.5em"> Muzika dhe Arti </a>
     </p>
     <div class="pjesa1"> 
-    <figure>
+        <figure class="fotol">
         <img src="http://www.johnfhunterphotography.com/wp-content/uploads/2017/08/K-60-website-450x450.jpg"
                  alt="sunrise" style="width:122px;height:80px">
         <figcaption>Lindja e Diellit</figcaption>
     </figure>
-    <figure style="position:relative; right:200px;">
+    <figure class="fotol" style="position:relative; right:200px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Sunset_2007-1.jpg"
              alt="sunset" style="width:122px;height:80px">
         <figcaption>Per&euml;ndimi i Diellit</figcaption>
     </figure>
-    <figure style="position:relative; right:200px;">
+    <figure class="fotol" style="position:relative; right:200px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Sunset_2007-1.jpg"
              alt="sunset" style="width:122px;height:80px">
         <figcaption>Per&euml;ndimi i Diellit</figcaption>
     </figure>
-        <figure style="position:relative; right:800px;">
+        <figure class="fotol" style="position:relative; right:800px;">
         <img src="https://cdn.contrastly.com/wp-content/uploads/sun.jpg"
              alt="mesdite" style="width:122px;height:80px">
         <figcaption>Dielli n&euml; mesdit&euml;</figcaption>

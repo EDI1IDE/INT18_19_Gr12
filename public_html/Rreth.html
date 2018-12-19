@@ -13,7 +13,7 @@ h1,h2,h3,nav,footer
 }
 body{
     font-family: Georgia,"Times New Roman";
-    background-color: #ffffff;
+    background-color: #e0e0e0;
     font-size: 100%;
     margin: 0em 4em 0.5em 4em;
     
@@ -22,8 +22,8 @@ body{
 h1{
     font-size: 24px;
     font-size: 1.5rem;
-    color:white;
-    background-color: #7d7d7d;
+    color:black;
+    
     padding: 0.8em;
     margin: 0em -2.7em 0em -2.7em;
     
@@ -56,7 +56,7 @@ a:hover{
 /*stilizimi i header,footer,nav*/
 header {
     color: white;
-    background-color: #3d6271;
+    background-color: #333333;
     padding: 0.5em;
     margin: 0em -4em 0em -4em;
  
@@ -126,7 +126,7 @@ header {
 }
 footer{
     color:white;
-    background-color: #3d6271;
+    background-color: #333333;
    
     
 }
@@ -173,18 +173,24 @@ p{
     border: solid 1px #999999;
 }
 .menuja{
-    background-color: #e6e4e4;
+    background-color: #e0e0e0;
     margin: 0em -4em 0em -4em;
+    color: white;
     
 }
 .menuja1{
     position: relative;
     left: 60px;
 }
+hr{
+    color: black;
+}
 /*stilizimi i footer*/
 footer{
     padding: 0.5em;
-    
+    font-weight: normal;
+    font-style: oblique;   
+
 }
 footer p{
     font-size: 14px;
@@ -201,10 +207,21 @@ footer p{
             <small><a class="a" href="#"> Lajme t&euml; vjetra</a></small>
         </header>
         <h1>&emsp;&ensp;&nbsp;Rreth</h1>
-        <p class="menuja"><small><a href="http://localhost:1234/interneti/INTprojekti/public_html/Ushtrimi.html" class="menuja1">Sht&euml;pia</a> &nbsp;&nbsp;
-                <a href="http://localhost:1234/interneti/INTprojekti/public_html/Sporti.html" class="menuja1">Sporti</a> &nbsp;&nbsp;
-            <a href="#" class="menuja1">Lajme</a> &nbsp;&nbsp;<a href="#" class="menuja1"> Rreth </a> </small> </p>
-        <h2 align="center">Stafi jon&euml;</h2>
+        <hr>
+        <hr style="position: relative; top:-7px;">
+        <p class="menuja"><small>
+                <a href="Ushtrimi.html" class="menuja1">Sht&euml;pia</a>&nbsp;&nbsp;
+                <a href="Sporti.html" class="menuja1">Sporti</a> &nbsp;&nbsp;
+                <a href="Shkenc&euml;.html" class="menuja1">Shkenca</a> &nbsp;&nbsp;
+                <a href="Kulture.html" class="menuja1">Kultura</a> &nbsp;&nbsp;
+                <a href="Pyet&euml;sori.html" class="menuja1">Pyet&euml;sori</a> &nbsp;&nbsp;
+                <a href="#" class="menuja1"> Rreth </a> </small> </p>
+            <hr>
+            <hr style="position: relative; top:-7px;">
+            
+        <h2 align="center" style="text-decoration: underline;">Stafi jon&euml;</h2>
+        <hr>
+        
         
         <div class="gazeta">    
             <div class="flip-card">
@@ -215,7 +232,8 @@ footer p{
             </div>
             <div class="flip-card-back">
             <h1>Muhamed Zahiri</h1> 
-            <p class="ngjyra">Architect & Engineer</p> 
+            <p class="ngjyra">Studies Copmuter Engeneering</p>
+            <p class="ngjyra">at University of Prishtina</p> 
             <p class="ngjyra">We love that guy</p>
             </div>
             </div>
@@ -228,7 +246,10 @@ footer p{
             </div>
             <div class="flip-card-back">
                 <h1>Ndri&ccedil;im Hajrullahu</h1>
-                <p class="ngjyra">Computer Engeneer</p>
+                
+                <p class="ngjyra">Studies Copmuter Engeneering</p>
+                <p class="ngjyra">at University of Prishtina</p>
+                <p class="ngjyra">We love that guy</p>
             </div>
             </div>
             </div>
@@ -242,12 +263,14 @@ footer p{
             </div>
             <div class="flip-card-back">
             <h1>Ndriqim Muhadri</h1> 
-            <p class="ngjyra">Architect & Engineer</p> 
+            <p class="ngjyra">Studies Copmuter Engeneering</p>
+            <p class="ngjyra">at University of Prishtina</p>
             <p class="ngjyra">We love that guy</p>
             </div>
             </div>
             </div>
         </div>
+        <hr style="position:relative; top: 100px;">
 
         <div id="mainContact">
             <h3 class="ex">Detajet Personale</h3>

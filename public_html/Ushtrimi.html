@@ -26,29 +26,24 @@
                 p
                 {
                    overflow-wrap: break-word;
-                   font-family: "trebuchet ms",arial,helvetica;
+                   font-family: "trebuchet ms",arial,helvetica,Georgia,"Times New Roman";
                 }
-                .guri
-                {
-                   background-color: #333333;
-                   font-family: "trebuchet ms",arial,helvetica;
-                   color:white;
-                }
+
                 h1
                 {
                    font-size:5em;
                    font-weight: normal;
-                   font-family: "Goudy Old Style";
+                   font-family: "Goudy Old Style","Times New Roman";
                    text-transform: capitalize;         
                 }
                 h2
                 {
-                    font-family: 'Titillium Web', sans-serif;
+                    font-family: 'Titillium Web', sans-serif,serif;
                 }
                 .p1
                 {
                     background-color: #333333;
-                    font-family: "trebuchet ms",arial,helvetica;
+                    font-family: "trebuchet ms",arial,helvetica,sans-serif;
                     margin: 0em -1em 1em -1em;
                     
                 }
@@ -59,22 +54,24 @@
                    position: relative;
                    bottom: 7px;
                }
+               /* stilizimi i linqeve */
                 a{text-decoration: none; color: black;}
                 a:hover{background-color: grey;}
                 
+                /* stilizimi i footer */
                 footer
                 {
+                    font-weight: normal;
                     font-style: oblique;   
                 }
-                .foto1
-                {
-                    margin: 2em 0em 2em 0em;
-                }
+                /* stilizimi i pjeses 1 */
+                
                 .fotoanash
-                {
-                    position: relative;
-                    right: 350px;
-                    margin: 2em 0em 2em 2em;
+                {   
+                    margin: 0em 0em -2em 2em;
+                }
+                .fotoanash1{
+                    margin: 2em 0em -2em 2em;
                 }
                 .f2
                 {
@@ -83,45 +80,47 @@
                 }
                 .F2
                 {
-                    float: right;  
+                      
                     position: relative;
-                    right: 93px;
+                    left: 125px;
+                    top: -115px;  
                 }
                 .pjesa1
                 {
                     display: flex;
-                    justify-content:space-between;
+                    flex: 1;
+                    margin-top: 2em;
+                    
                 }
-                
+                .teksti{
+                    width: 500px;
+                }
+                .pjesa1anash{
+                   flex-direction: column;
+                  
+                }
                 .paragrafi
                 {
                     position: relative;
                     right: -125px;
-                    top: -80px;
+                    top: -100px; 
                 } 
-                .ari
+               
+                .artikulli
                 {
+                    
                     position: relative;
-                    right: 80px;
+                    left: 30px;
+                   
                 }
-                .bora
+                .partikulli
                 {
-                    float: left;  
+                    
                     position: relative;
-                    right: 240px;
-                    top: -30px;
+                    left: 30px;
+                    
                 }
-                .fjolla
-                {
-                    position: relative;
-                    right: 320px;
-                    top: -20px;   
-                }
-                .fotoana
-                {
-                    position: relative;
-                    right: 1000px;
-                }
+
                 .rrethi{
                     height: 25px;
                     width: 25px;
@@ -131,6 +130,64 @@
                     position: relative;
                     left: 815px;
                 }
+                /*stilizimi i pjeses2 */
+                .pjesa2{
+                    margin: 1em 1em 1em 1em;
+                    display: flex;
+                }
+                .pjesa2foto{
+                    margin-left:auto;
+                    margin-bottom: 1em;
+                }
+                .fotopjesa2{
+                    margin-left: 2em;
+                    margin-bottom: 1em;
+                }
+                .h3pj2{
+                    margin: 1em 3em 1em 0em;
+                }
+                .hr2{
+                    position: relative;
+                    top: -15px;
+                    margin-right: 30px;
+                }
+                /* stilizimi i pjeses se 3te */
+                .pjesa3{
+                    margin: auto;
+                }
+                .pjesa3menu
+                {
+                   background-color: #333333;
+                   font-family: "trebuchet ms",arial,helvetica;
+                   color:white;
+                   padding: 5px;
+                   margin-right: 30px;
+                   width: 50%;
+                   border: 1px solid #fff;
+                  
+                }
+                .fotopjesa3
+                {
+                    margin: 2em 0em 2em 0em;
+                }
+                .caption3{
+                    font-weight: bold;
+                }
+                
+                /* stilizimi i pjeses se 4 */
+                .pjesa4{
+                    margin: auto;
+                }
+                .caption4{
+                    font-weight: bold;
+                }
+                /* stilizimi i pjeses se 5 */
+                .pjesa5{
+                    margin: auto;
+                }
+                
+                
+                /*
                 .fotoanash img
                 {
                   transition: transform 2000ms ease-in-out;
@@ -196,6 +253,7 @@
               {
               -webkit-transform: scale(0.6);
               transform: scale(0.6);
+              */
               }
 
         </style>
@@ -219,126 +277,177 @@
     <center><h2> Te gjitha lajmet e fundit nga bota</h2></center>
     <hr>
     <hr style="position: relative; top:-7px;">
-    <p><small><a href="Revista Drita.html">Sht&euml;pia</a> &nbsp;&nbsp; <a href="Sporti.html">Sporti</a> &nbsp;&nbsp;
-            <a href="Lajme.html">Lajme</a> &nbsp;&nbsp;<a href="Kultura.html">Kultura</a> &nbsp;&nbsp;
-            <a href="Pyet&euml;sori.html">Pyet&euml;sori</a> &nbsp;&nbsp;<a href="Rreth.html"> Rreth </a> </small> </p>
+    <p><small><a href="Revista Drita.html">Sht&euml;pia</a> &nbsp;&nbsp; 
+            <a href="Sporti.html">Sporti</a> &nbsp;&nbsp;
+            <a href="Shkenc&euml;.html">Shkenca</a> &nbsp;&nbsp;
+            <a href="Kulture.html">Kultura</a> &nbsp;&nbsp;
+            <a href="Pyet&euml;sori.html">Pyet&euml;sori</a> &nbsp;&nbsp;
+            <a href="Rreth.html"> Rreth </a> </small> </p>
     <hr>
     <hr style="position: relative; top:-7px;">
+    
+    
     <div class="pjesa1">
     <figure class="foto1">
             <img src="https://www.duanestreethotel.com/wp-content/uploads/2017/08/GettyImages-494607942-1.jpg"
                  alt="centralpark" style="width:500px;height:320px;"/>
-            <figcaption>Parku qendror n&euml; qytetin e Nju Jorkut </figcaption>
+            <figcaption><h3>Parku qendror n&euml; qytetin e Nju Jorkut</h3>
+           <p class="teksti">
+           <br>
+           Parku qendror është një park në zemër të Manhattan, në New York City,
+           të Shteteve të Bashkuara të Amerikës.
+           Ky park është hapur në vitin 1859 dhe është përfunduar në vitin 1859. 
+           Me një gjatësi prej 4,07 km dhe një gjërësi prej 800 m ka një 
+           sipërfaqe prej 341 ha dhe zë 6 % të sipërfaqes tokësore në Manhattan.
+           Përafërsisht 25 milionë vizitorë çdo vit nga e gjithë bota vizitojnë këtë park aq të njohur. 
+           Arkitektët ishin Frederick Law Olmsted dhe Calvert Vaux.
+           </p>
+            </figcaption>
+           
     </figure>       
-    <ul>   
+    <div class="pjesa1anash">
     <figure class="fotoanash">
         <img  class="f2" src="https://www.duanestreethotel.com/wp-content/uploads/2017/08/GettyImages-494607942-1.jpg" alt="Fig2"
              style="width:100px;height:100px;">
-        <h3 class="F2"><a class="ari" href="http://www.bota.al/2014/04/nje-udhetim-ne-40-vende-te-magjishme-ne-bote/"> Udh&euml;time n&euml;p&euml;r bot&euml;</a></h3>
+        <h3 class="F2"><a href="http://www.bota.al/2014/04/nje-udhetim-ne-40-vende-te-magjishme-ne-bote/"> Udh&euml;time n&euml;p&euml;r bot&euml;</a></h3>
         <p class="paragrafi">Nj&euml; foto piktoreske e marr n&euml; parkun q&euml;ndror t&euml; Nju Jorkut..</p>
     </figure>
-        
     <article>
-        <h3 class="bora"><a class="ari" href="https://indeksonline.net/drita-thyen-rekord-ne-shitjen-e-biletave/">Drita thyen rekord në shitjen e biletave</a></h3>
+        <h3 class="artikulli"><a href="https://indeksonline.net/drita-thyen-rekord-ne-shitjen-e-biletave/">Drita thyen rekord në shitjen e biletave</a></h3>
         <br>
-        <p class="fjolla">Rekord i ri: brenda dit&euml;s u shit&euml;n 8000 bileta..
+        <p class="partikulli">Rekord i ri: brenda dit&euml;s u shit&euml;n 8000 bileta..
         <br>Trajneri Bekim Isufi n&euml; fjalim tregoi q&euml; arritjet e ekipit,<br> pasqyrojn&euml; mb&euml;shtetjen e st&euml;rmadhe t&euml; Intelektual&euml;ve </p>
     </article>
-        
-    <figure class="fotoanash">
+    <figure class="fotoanash1">
         <img  class="f2" src="https://i.kinja-img.com/gawker-media/image/upload/s--YFybMImn--/c_scale,f_auto,fl_progressive,q_80,w_800/w8xvxzrj8kn1iuzrjnqt.jpg" alt="Fig3"
              style="width:100px;height:100px;">
-        <h3 class="F2"><a class="ari" href="http://tess.al/">Hapet TSS n&euml; Tiran&euml;</a></h3>
+        <h3 class="F2"><a href="http://tess.al/">Hapet TSS n&euml; Tiran&euml;</a></h3>
         <p class="paragrafi">Hapet shkolla e re e pamjes dhe grimit n&euml; Tiran&euml;..</p>
     </figure>
-        
-    <figure class="fotoanash">
+    <figure class="fotoanash1">
         <img  class="f2" src="https://epsilon.aeon.co/images/b7dcc102-10c0-4701-8cd2-c9255b61e4de/header_Essay-42-70635245.jpg" alt="Fig4"
              style="width:100px;height:100px;">
-        <h3 class="F2"><a class="ari" href="https://internetisigurte.org/rreziqet/rrjetet-sociale/">Vart&euml;sia n&euml; programe </a></h3>
+    <h3 class="F2"><a  href="https://internetisigurte.org/rreziqet/rrjetet-sociale/">Vart&euml;sia n&euml; programe </a></h3>
         <p class="paragrafi">Lexoni m&euml; tep&euml;r rreth brengave t&euml; k&euml;saj q&euml;shtjeje n&euml; vijim..</p>
     </figure>
-    </ul>
-    </div>      
+
+    </div>
+    </div>
     <hr>
     <hr style="position: relative; top:-7px;">
-    <div class="pjesa1">
-    <ul>
-        <figure class="fotok">
+    <div class="pjesa2">
+    <div class="pj2">
+        <h3 class="h3pj2">Pershkrim per kete pjese</h3>
+        <hr class="hr2">
+        <figure class="pjesa2foto">
         <img src="http://www.johnfhunterphotography.com/wp-content/uploads/2017/08/K-60-website-450x450.jpg"
                  alt="sunrise" style="width:60px;height:60px">
-        <figcaption>Lindja e Diellit</figcaption>
+        <figcaption><h3>Pershkrimi per foton 1</h3>
+            <p><small>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</small></p>
+        </figcaption>
+        
     </figure>
-    <figure class="fotok" >
+    <figure class="pjesa2foto" >
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Sunset_2007-1.jpg"
              alt="sunset" style="width:60px;height:60px">
-        <figcaption>Per&euml;ndimi i Diellit</figcaption>
+        <figcaption><h3>Pershkrimi per foton 2</h3>
+            <p><small>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</small></p>
+        </figcaption>
     </figure>
-        <figure class="fotok">
+        <figure class="pjesa2foto">
         <img src="https://cdn.contrastly.com/wp-content/uploads/sun.jpg"
-             alt="mesdite" style="width:60px;height:60px">
-        <figcaption>Dielli n&euml; mesdit&euml;</figcaption>
+             alt="mesdite" style="width:60px;height:60px;">
+        <figcaption><h3>Pershkrimi per foton 3</h3>
+            <p><small>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</small></p>
+        </figcaption>
     </figure>
-    </ul>
-    <ul>   
-    <figure class="fotoana">
+    </div>    
+    <div class="pj_2">
+    <h3 class="h3pj2">Pershkrim per kete pjese</h3>
+    <hr class="hr2">
+    <figure class="fotopjesa2">
         <img src="http://www.johnfhunterphotography.com/wp-content/uploads/2017/08/K-60-website-450x450.jpg"
                  alt="sunrise" style="width:60px;height:60px">
-        <figcaption>Lindja e Diellit</figcaption>
+        <figcaption><h3>Pershkrimi per foton 4</h3>
+            <p><small>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</small></p>
+        </figcaption>
     </figure>
-    <figure class="fotoana">
+    <figure class="fotopjesa2">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Sunset_2007-1.jpg"
              alt="sunset" style="width:60px;height:60px">
-        <figcaption>Per&euml;ndimi i Diellit</figcaption>
+        <figcaption><h3>Pershkrimi per foton 5</h3>
+            <p><small>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</small></p>
+        </figcaption>
     </figure>
-    <figure class="fotoana">
+    <figure class="fotopjesa2">
         <img src="https://cdn.contrastly.com/wp-content/uploads/sun.jpg"
              alt="mesdite" style="width:60px;height:60px">
-        <figcaption>Dielli n&euml; mesdit&euml;</figcaption>
+        <figcaption><h3>Pershkrimi per foton 6</h3>
+            <p><small>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</small></p>
+        </figcaption>
     </figure>
-       </ul>     
+            
+    </div>
     </div>
     <hr>
     <hr style="position: relative; top:-7px;">
     <p>
-        &emsp;&emsp;<a href="#" class="guri">Financat</a> <a href="#" class="guri" style="position:relative; left:9em">Sportet</a>
-       <a href="#" class="guri" style="position:relative; left:17em">Lajmet</a> 
-       <a href="#" class="guri" style="position:relative; left:24.5em"> Muzika dhe Arti </a>
+        <a href="#" class="pjesa3menu">Financat &emsp;</a>
+       <a href="#" class="pjesa3menu">Sportet</a>
+       <a href="#" class="pjesa3menu">Lajmet</a> 
+       <a href="#" class="pjesa3menu"> Muzika dhe Arti </a>
     </p>
-    <div class="pjesa1"> 
-        <figure class="fotol">
+    <div class="pjesa3"> 
+        <figure class="fotopjesa3">
         <img src="http://www.johnfhunterphotography.com/wp-content/uploads/2017/08/K-60-website-450x450.jpg"
                  alt="sunrise" style="width:122px;height:80px">
         <figcaption>Lindja e Diellit</figcaption>
     </figure>
-    <figure class="fotol" style="position:relative; right:200px;">
+    <figure class="fotopjesa3">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Sunset_2007-1.jpg"
              alt="sunset" style="width:122px;height:80px">
-        <figcaption>Per&euml;ndimi i Diellit</figcaption>
+        <figcaption class="caption3">Per&euml;ndimi i Diellit</figcaption>
     </figure>
-    <figure class="fotol" style="position:relative; right:200px;">
+    <figure class="fotopjesa3">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Sunset_2007-1.jpg"
              alt="sunset" style="width:122px;height:80px">
-        <figcaption>Per&euml;ndimi i Diellit</figcaption>
+        <figcaption class="caption3">Per&euml;ndimi i Diellit</figcaption>
     </figure>
-        <figure class="fotol" style="position:relative; right:800px;">
+        <figure class="fotopjesa3">
         <img src="https://cdn.contrastly.com/wp-content/uploads/sun.jpg"
              alt="mesdite" style="width:122px;height:80px">
-        <figcaption>Dielli n&euml; mesdit&euml;</figcaption>
+        <figcaption class="caption3">Dielli n&euml; mesdit&euml;</figcaption>
     </figure>
     </div>
     <hr>
     <hr style="position: relative; top:-7px;">
+    <div class="pjesa4">
     <figure>
         <img src="https://handluggageonly.co.uk/wp-content/uploads/2017/12/Hand-Luggage-Only-10-2.jpg"
              alt="Figura me e shikuar" style="width:122px;height:80px">
-        <figcaption>Figura m&euml; e shikuar</figcaption>
+        <figcaption class="caption4">Figura m&euml; e shikuar</figcaption>
     </figure>
+    </div>    
     <hr>
+    
     <hr style="position: relative; top:-7px;">
-        <p><small><a href="#">Zgjedhjet Studentore</a> &nbsp;&nbsp; <a href="#">Zgjedhjet e Bordit</a> &nbsp;&nbsp;
-            <a href="#">Zgjedhjet e Dekanatit</a> &nbsp;&nbsp;<a href="#">Zgjedhjet e Rektoratit</a>&nbsp;&nbsp;
-            <a href="#">Zgjedhjet e Ministris&euml;</a></small> </p>
+    <div class="pjesa5">
+        <p><small><a href="#" style="font-weight:bold;">Zgjedhjet Studentore</a> &nbsp;&nbsp; 
+                  <a href="#" style="font-weight:bold;">Zgjedhjet e Bordit</a> &nbsp;&nbsp;
+                  <a href="#" style="font-weight:bold;">Zgjedhjet e Dekanatit</a> &nbsp;&nbsp;
+                  <a href="#" style="font-weight:bold;">Zgjedhjet e Rektoratit</a>&nbsp;&nbsp;
+                  <a href="#" style="font-weight:bold;">Zgjedhjet e Ministris&euml;</a>
+        </small> </p>
+         <p><small>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua.</small></p>
+            <p style="position: relative; right:-250px; top: -75px"><small>
+            Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua.</small></p>
+            <p style="position: relative; right:-500px; top: -150px"><small>
+            Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua.</small></p>
+            <p style="position: relative; right:-770px; top: -225px"><small>
+            Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua.</small></p>
+            <p style="position: relative; right:-1030px; top: -300px"><small>
+            Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua.</small></p>
+    </div>        
     <footer>
              <hr>
              <hr style="position: relative; top:-7px;">

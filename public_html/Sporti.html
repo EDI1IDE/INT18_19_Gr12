@@ -69,9 +69,7 @@ and open the template in the editor.
               .fig1{
                   margin: 1em 0em 1em 1em;
               }
-              .fig2{
-                  margin: 1em 0em 1em 1em;
-              }
+              
               .t{
                   color: black;
               }
@@ -87,6 +85,11 @@ and open the template in the editor.
               .pjesa2{
                   flex: 1;
               }
+              .fotopjesa1 ul li{
+                  margin-top: 1em;
+                  margin-left: 3em;
+                  list-style:none;
+              }
               /* klasa 3 */
               .klasa3{
                   display: flex;
@@ -97,23 +100,16 @@ and open the template in the editor.
                   margin-top: 1em;
                   position: relative;
                   left: -70px;
-                  
+                  clear:right;
               }
               .kampion{
                   float: right;
                   margin: 1em 1em 0em 1em;
               }
-              .shaqa{
-                  margin: 1em 1em 0em 3em;
-                  
-              }
+              
               .kosova{
                   width: 500px;
                   
-              }
-              .liga{
-                  margin: 1em 1em 0em 3em;
-                  float:bottom;
               }
               .pks{
                   font-weight: normal;
@@ -175,14 +171,18 @@ and open the template in the editor.
               /* stilizimi i kl 2 */
               .klasa2{
                   display: flex;
-                  justify-content: space-between;
+                  
               }
               .nenkl2{
                  margin: 1em 0em 0em 2em;
               }
-              .muriqi{
-                  font-weight: normal;
-                  margin-top: 1em;
+              .nenkl2 ul li {
+                  list-style: none;
+                  
+                  
+              }
+              .nenklasa3 ul li {
+                  list-style: none;
               }
               footer{
                     padding: 0.5em;
@@ -207,6 +207,15 @@ and open the template in the editor.
                     position: relative;
                     left: 69%;
               }
+              .f1
+                {
+                    padding: 0.25em;
+                    border: solid 1px #999999;
+                }
+                .ron1{
+                    text-align: center;
+                    font-family: "trebuchet ms",arial,helvetica,sans-serif;
+                }
         </style>
     </head>
     <body>
@@ -239,66 +248,85 @@ and open the template in the editor.
      <figure class="fig1">
             <img  src="https://scd.france24.com/fr/files_fr/imagecache/home_1024/article/image/ballon-or-france-football-2018-modric.jpg"
                  alt="modric" style="width:500px;height:320px;"/>
-            <figcaption class="figura1">Modriqi fiton Topin e Art&euml; 2018
-            <p class="k1">Kroati arriti q&euml; t&euml; prish&euml; serin&euml; e triumfeve nga Cristiano Ronaldo dhe Lionel Messi, 
+            <figcaption class="figura1" style="margin-top:0.5em;">Modriqi fiton Topin e Art&euml; 2018
+            <p class="k1" style="margin-top: 0.5em;">Kroati arriti q&euml; t&euml; prish&euml; serin&euml; e triumfeve nga Cristiano Ronaldo dhe Lionel Messi, 
                 duke marr&euml; çmimin prestigjioz fal&euml; suksesit n&euml;
                 Lig&euml;n e Kampion&euml;ve dhe arritjes n&euml; finale t&euml; Bot&euml;rorit me Kroacin&euml;.
             </p>
             </figcaption>
             
      </figure>
-         
-         
-         <figure class="ajax">
-             <img  src="https://mrfixitstips.co.uk/wp-content/uploads/2018/12/MRF2018_AjaxvBayern.jpg"
-                 alt="ajaxvbayern" style="width:150px;height:100px;"/>
-            <figcaption class="fajax">Ajaxi e Bayerni e mbyllin me spektak&euml;l faz&euml;n e grupeve në Lig&euml;n e Kampion&euml;ve</figcaption>
-             
-         </figure>
-         
-         
+         <div class="fotopjesa1">    
+             <ul>
+             <li><img  class="f1" src="https://mrfixitstips.co.uk/wp-content/uploads/2018/12/MRF2018_AjaxvBayern.jpg"
+                       alt="ajaxvbayern" style="width:150px;height:100px;"/>
+                 <p style="float: right; font-weight: bold; clear: right; margin-left: 1em;">Ajaksi dhe Bayern mbeten baraz</p>
+                 <p style="width:450px; height: 60px; position: relative; top: -80px; left:185px;">Ajax dhe Bayern kan perfunduar ndeshjen 3 me 3.
+                     Ajax dhe Bayern kan perfunduar ndeshjen 3 me 3.Ajax dhe Bayern kan perfunduar ndeshjen 3 me 3</p>
+             </li>
+             <li><img class="f1"  src="https://mrfixitstips.co.uk/wp-content/uploads/2018/12/MRF2018_AjaxvBayern.jpg"
+                       alt="ajaxvbayern" style="width:150px;height:100px; margin-top: -1.7em;"/>
+                 <p style="float: right; font-weight: bold; clear: right; margin-top: -1.7em;">Ajaksi dhe Bayern mbeten baraz</p>
+                 <p style="width:450px; height: 60px; position: relative; top: -80px; left:185px;">Ajax dhe Bayern kan perfunduar ndeshjen 3 me 3.
+                     Ajax dhe Bayern kan perfunduar ndeshjen 3 me 3.Ajax dhe Bayern kan perfunduar ndeshjen 3 me 3</p>
+             </li>
+                 
+             <li><img class="f1" src="https://mrfixitstips.co.uk/wp-content/uploads/2018/12/MRF2018_AjaxvBayern.jpg"
+                       alt="ajaxvbayern" style="width:150px;height:100px; margin-top: -1.7em;"/>
+                 <p style="float: right; font-weight: bold; clear: right; margin-top: -1.7em;">Ajaksi dhe Bayern mbeten baraz</p>
+                 <p style="width:450px; height: 60px; position: relative; top: -80px; left:185px;">Ajax dhe Bayern kan perfunduar ndeshjen 3 me 3.
+                     Ajax dhe Bayern kan perfunduar ndeshjen 3 me 3.Ajax dhe Bayern kan perfunduar ndeshjen 3 me 3</p>
+             </li>
+             </ul>
+         </div>  
      </div> 
-     <div class="klasa2">
-     <div class="nenklasa2">    
+     <div class="klasa2">    
      <figure class="fig1">
             <img src="https://cdn.cnn.com/cnnnext/dam/assets/150330124811-shaqiri-2-exlarge-169.jpg"
-                 alt="zvicra" style="width:500px;height:320px;"/>
-            <figcaption>Zvicra p&euml;rmbys&euml; Belgjiken me 5 gola, Shaqiri spektakolar
+                 alt="zvicra" style="width:500px;height:320px; margin-top: -2em;"/>
+            <figcaption style="margin-top: 0.5em;">Zvicra p&euml;rmbys&euml; Belgjiken me 5 gola, Shaqiri spektakolar
                 <p class="zvicra">
                    Zvicra ka mundur me rezultatin 5-2 Beljik&euml;n, n&euml; takimin e fundit t&euml; Lig&euml;s s&euml; Kombeve. 
                    Megjith&euml;se ishin n&euml; disavantazhin e dy golave, zviceran&euml;t kan&euml; ditur t&euml; reagojnë mir&euml;
                    duke sh&euml;nuar 5 gola t&euml; tjer&euml;.
-                   Me k&euml;t&euml; fitore, Zvicra ka fituar edhe grupin e saj,
-                   duke u renditur e para me pik&euml; t&euml; barabarta por me m&euml; shum&euml; gola se Belgjika.
                 </p>
             </figcaption>
      </figure>
-     </div>
          <div class="nenkl2">
-         <figure class="fig2>">    
-             <img src="https://pbs.twimg.com/media/DljQ8c2WsAMlAV_.jpg" alt="arianit"
-                  style="width:150px;height:100px;"/>
-             <figcaption>Muriqi, heroi i Cityt n&euml; penaltit&euml; me Leicesterin
-                 <p class="muriqi">
-                     Portieri i përfaq&euml;sueses s&euml; Kosov&euml;s, Arjanet Muriqi ia ka siguruar
-                     Manchester Cityt gjysm&euml;finalen e kup&euml;s EFL pasi ka pritur dy penalti t&euml; Leicester Cityt.
-                     Koha e rregullt p&euml;rfundoi 1 me 1 me golat e Kevin De Bruyne e Mark Albrighton
-                     nd&euml;rsa portieri gjigant u përkujdes q&euml; City
-                     t&euml; kalonte n&euml; raundin e ri t&euml; kup&euml;s pas penaltive t&euml; ekzekutuara.
-                     Pasi Fuchs d&euml;shtoi t&euml; çonte topin n&euml; rrjet nga penaltia, Muriq ndali penaltit&euml; e Maddisonit
-                     dhe Soyuncus para se Zinchenko t&euml; realizonte golin e fundit p&euml;r Cityn.
-                 </p>
-             </figcaption>
-         </figure>
-         </div>    
+             <ul>
+                 <li><img class="f1" src="https://pbs.twimg.com/media/DljQ8c2WsAMlAV_.jpg" alt="arianit"
+                  style="width:150px;height:100px; margin-top: -2em; margin-left: 2em;"/>
+                <p style="float:right;font-weight: bold; position: relative; top: -30px; left: 30px; clear: right;">
+                    Muriqi, heroi i Cityt n&euml; penaltit&euml; me Leicesterin</p>
+                <p style="width: 450px; height:60px; position: relative; top:-80px; left:215px;">Portieri i përfaq&euml;sueses s&euml; Kosov&euml;s,
+                    Arjanet Muriqi ia ka siguruar
+                    Manchester Cityt gjysm&euml;finalen e kup&euml;s EFL pasi ka pritur dy penalti.</p>
+                 </li>
+                 <li><img class="f1" src="https://pbs.twimg.com/media/DljQ8c2WsAMlAV_.jpg" alt="arianit"
+                  style="width:150px;height:100px; margin-top: -0.8em; margin-left: 2em;"/>
+                <p style="float:right;font-weight: bold; position: relative; top: -10px; left: 30px; clear: right;">
+                    Muriqi, heroi i Cityt n&euml; penaltit&euml; me Leicesterin</p>
+                <p style="width: 450px; height:60px; position: relative; top:-80px; left:215px;">Portieri i përfaq&euml;sueses s&euml; Kosov&euml;s,
+                    Arjanet Muriqi ia ka siguruar
+                    Manchester Cityt gjysm&euml;finalen e kup&euml;s EFL pasi ka pritur dy penalti.</p>
+                 </li>
+                 <li><img class="f1" src="https://pbs.twimg.com/media/DljQ8c2WsAMlAV_.jpg" alt="arianit"
+                  style="width:150px;height:100px; margin-top: -0.8em; margin-left: 2em;"/>
+                <p style="float:right;font-weight: bold; position: relative; top: -10px; left: 30px; clear: right;">
+                    Muriqi, heroi i Cityt n&euml; penaltit&euml; me Leicesterin</p>
+                <p style="width: 450px; height:60px; position: relative; top:-80px; left:215px;">Portieri i përfaq&euml;sueses s&euml; Kosov&euml;s,
+                    Arjanet Muriqi ia ka siguruar
+                    Manchester Cityt gjysm&euml;finalen e kup&euml;s EFL pasi ka pritur dy penalti.</p>
+                 </li>
+             </ul>    
+         </div>
      </div>
         <h2 class="latest">Lajmet m&euml; t&euml; lexuara</h2>
-     <div class="klasa3">
-     <div class="nenkl3">    
+     <div class="klasa3">    
      <figure class="fig1">
             <img  src="http://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F0910%2Fr429092_1296x729_16-9.jpg"
                  alt="kosova" style="width:500px;height:320px;"/>
-            <figcaption class="kosova">Kosova madh&euml;shtore, kualifikohet n&euml;  gjysm&euml; finale t&euml; 
+            <figcaption class="kosova" style="margin-top: 0.5em;">Kosova madh&euml;shtore, kualifikohet n&euml;  gjysm&euml; finale t&euml; 
                 Lig&euml;s s&euml;  Kombeve 
                 <p class="pks">Kosova &euml;sht&euml; kualifikuar n&euml; gjysm&euml;finale t&euml; Lig&euml;s s&euml; Kombeve pas fitores së thellë 4:0 
                     ndaj Azerbajxhanit n&euml; “Fadil Vokrri”,
@@ -306,30 +334,36 @@ and open the template in the editor.
                     duke u kualifikuar k&euml;shtu n&euml; gjysm&euml;finale t&euml; Lig&euml;s D,
                     ku do t&euml; p&euml;rballen ndaj Maqedonis&euml;.
                     Arb&euml;r Zeneli ishte heroi i “Dardan&euml;ve”, duke realizuar “Hat-Trick” n&euml; k&euml;t&euml; takim.
-                    Zeneli e hapi serin&euml; e golave qysh n&euml; minut&euml;n e 2-t&euml;,
-                    nd&euml;rsa dy golat e tjer&euml; i realizoi n&euml; minutat 50’ dhe 76’.
-                    Nd&euml;rkoh&euml;, me nj&euml; gol kontribuoi edhe mbrojt&euml;si Amir Rrahmani,
-                    i cili sh&euml;noi me kok&euml; n&euml; minut&euml;n e 76-t&euml;./Revista Drita</p>
+                </p>
             </figcaption>
      </figure>
-     </div>
+     
      <div class="nenklasa3">  
-     <figure>
-         <img class="shaqa" src="https://aws-img.allfootballapp.com/www/M00/12/C6/480x-/-/-/rB8oyFwOu4GAcEeDAAEgERxwnRs382.jpg.webp"
-              alt="shaqirii" style="width:150px; height: 100px;">
-         <figcaption class="shaqiri">Shaqiri prezanton fanellat retro t&euml; Liverpoolit</figcaption>
-     </figure>
-     <figure>
-         <img class="liga" src="https://www.standardmedia.co.ke/images/tuesday/zuxwat749hkl5lin5j5bcecc07a876a.jpg"
-              alt="championsleague" style="width:150px; height: 100px;">
-         <figcaption class="kampion">K&euml;to jan&euml; 16 ekipet q&euml; kaluan grupet n&euml; “Champions”</figcaption>
-     </figure>
+         <ul>
+             <li><img class="f1" src="https://aws-img.allfootballapp.com/www/M00/12/C6/480x-/-/-/rB8oyFwOu4GAcEeDAAEgERxwnRs382.jpg.webp"
+              alt="shaqirii" style="width:150px; height: 100px; margin: 1em 1em 0em 4em;">
+                 <p style="font-weight: bold; float: right; position: relative; top: 15px; left:15px; clear:right;">
+                     Shaqiri prezanton fanellat retro t&euml; Liverpoolit</p>
+                 <p style=" width:450px;position:relative; left:250px; top:-80px;">Xherdan Shaqiri futbollisti shqip&euml;tar ka prezantuar fanelat retro te Liverpoolit</p>
+             </li>
+             <li><img class="f1" src="https://www.standardmedia.co.ke/images/tuesday/zuxwat749hkl5lin5j5bcecc07a876a.jpg"
+              alt="championsleague" style="width:150px; height: 100px;  margin: 2em 1em 0em 4em; float:bottom;">
+                 <p style="width: 450px;font-weight:bold; position:relative; left:250px; top: -105px;">
+                     K&euml;to jan&euml; 16 ekipet q&euml; kaluan grupet n&euml; “Champions”</p>
+                 <p style="width: 450px;position:relative; left:250px; top: -95px;">Ekipet te cilat kaluan fazen e grupeve n&euml; Lig&euml; e Kampioneve jan&euml;...</p>
+             </li>
+             <li><img class="f1" src="https://aws-img.allfootballapp.com/www/M00/12/C6/480x-/-/-/rB8oyFwOu4GAcEeDAAEgERxwnRs382.jpg.webp"
+              alt="shaqirii" style="width:150px; height: 100px; margin: 1em 1em 0em 4em;">
+                 <p style="font-weight: bold; float: right; position: relative; top: 15px; left:15px; clear:right;">
+                     Shaqiri prezanton fanellat retro t&euml; Liverpoolit</p>
+                 <p style=" width:450px;position:relative; left:250px; top:-80px;">Xherdan Shaqiri futbollisti shqip&euml;tar ka prezantuar fanelat retro te Liverpoolit</p>
+             </li>
+         </ul>
      </div>
      </div>
      <div>
-         <h2 class="latest">Lojtar&euml;t m&euml; t&euml; mir&euml;</h2>
+     <h2 class="latest">Lojtar&euml;t m&euml; t&euml; mir&euml;</h2>
      </div>
-     <div class="best">
      <div class="Lojtaret">
          <figure>
          <img class="lojtaret" src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/07/10/16/cristiano-ronaldo-wave-2017.jpg?w968"
@@ -363,13 +397,13 @@ and open the template in the editor.
          
          
      </div>
-    </div> 
+    
         <hr style="margin: 0em 1em 0em 1em;">    
      <footer>
-         <small><a href="#" style="color: grey;">Sht&euml;pia</a> | 
+         <small><a href="#" style="color: grey;">&nbsp;&nbsp;Sht&euml;pia</a> | 
             <a href="#" style="color:grey;">Katalogu</a> |
             <a href="#" style="color:grey;">Arikvi</a></small>
-             <p>Te drejtat e rezervuara &copy;Fiek2018</p>
+            <p>&nbsp;&nbsp;Te drejtat e rezervuara &copy;Fiek2018</p>
      </footer>      
      
     </body>

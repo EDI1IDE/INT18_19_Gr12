@@ -12,106 +12,59 @@ and open the template in the editor.
         <style type="text/css">
              *{margin: 0;padding: 0;}
               body{
-              font-family: Georgia,"Times New Roman";
-              background-color: #e0e0e0;
-              font-size: 100%;
-              
-             
+                   font-family: Georgia,"Times New Roman";
+                   background-color: #e0e0e0;
+                   font-size: 100%;
               }
               h1{
-              font-size: 24px;
-              font-size: 1.5rem;
-              color:black;
-              background-color: #a9a9ad;
-              padding: 0.8em;
+                   font-size:5em;
+                   font-weight: normal;
+                   font-family: "Goudy Old Style","Times New Roman";
+                   text-transform: capitalize; 
+                   margin-top: 0.3em;
               }
               h3{
-               font-size: 18px;
-                border-bottom: solid 1pt #999999;
+                   font-family: 'Titillium Web', sans-serif,serif;
               }
               /*stilizimi i linqeve*/
                /*selektoret pseudo-klase*/
-              a:link{
-                font-weight: bold;
-                color: #3d6271;
-              }
-              a:visited{
-                color: #e3e3ef;
-              }
+              a{text-decoration: none; color: black;}
               a:hover{
-                  background-color: thistle;
+                  background-color: grey;
               }
-              .top-bar{
-                  background-color: #000;
-                  display: -webkit- box;
-                  display: -webkit-flex;
-                  display: flex;
-                  width: 100%;
-                  height: auto;
-              }
-              .emri{
-                  color: #fff;
-                  -webkit-box-flex: 1;
-                  -webkit-flex:1;
-                  flex: 1;
-                  font-size: 40px;
-                  padding: 18px;
-                  text-transform: uppercase;
-              }
-              .menu{
-                  -webkit-flex: 3;
-                  -moz-flex: 3;
-                  -ms-flex: 3;
-                  flex: 3;
-              }
-              .menu{
-                  display: -webkit-box;
-                  display: -webkit-flex;
-                  display: flex;
-                  list-style: none;
-                  margin-top: 30px;
-                  -webkit-box-orient: horizontal;
-                  -webkit-box-direction: normal;
-                  -webkit-flex-flow:row wrap;
-                  flex-flow: row wrap;
-              }
-              .menu ul li{
-                  -webkit-box-flex: 1;
-                  -webkit-flex: 1;
-                  flex: 1;
-                  padding: 20px;
-                  display: inline;
-              }
-              .menu ul li a{
-                  color: #fff;
-                  font-size: 20px;
-                  text-decoration: none;
-              }
-              .a{
-                  color: white;
-                  position: relative;
-                  left: 15px;
-                  
+              .p1{
+                  background-color: #333333;
+                  font-family: "trebuchet ms",arial,helvetica,sans-serif;
+                 
               }
               header{
                 color:white;
                 background-color: #373737;
-                padding: 0.4em;
-                
+                padding: 8px;
               }
+              .a{
+                   text-decoration: none;
+                   color: white;
+                   position: relative;
+                   bottom: 7px;
+                   left: 8px;
+               }
               footer{
-                color:white;
-                background-color: #373737;
+                color: grey;
+                background-color: #e0e0e0;
               }
-              nav{
-                background-color: #e3e3ef;
-                
-                padding: 4px;
+              .revista{
+                  margin: 0em 0em 1em 0em;
+                  font-size: 15px;
+                  font-family: 'Titillium Web', sans-serif,serif;
               }
-              nav ul li{
-                list-style: none;
-                display: inline;
-                
+              .menuja{
+                  text-decoration: none;
+                  color: black;
+                  font-family: "trebuchet ms",arial,helvetica,Georgia,"Times New Roman";
+                  padding: 12px;
+                  position: relative;
+                  bottom: 4px;
               }
               .fig1{
                   margin: 1em 0em 1em 1em;
@@ -210,6 +163,7 @@ and open the template in the editor.
               .latest{
                   display: flex;
                   flex-direction: row;
+                  margin: 0em 0.7em 0em 0.7em;
               }
               .latest:before,.latest:after{
                   content: "";
@@ -217,9 +171,7 @@ and open the template in the editor.
                   border-bottom: 1px solid red;
                   margin: auto;
               }
-              h2{
-                  margin: 1em 0em 1em 0em;
-              }
+              
               /* stilizimi i kl 2 */
               .klasa2{
                   display: flex;
@@ -235,34 +187,54 @@ and open the template in the editor.
               footer{
                     padding: 0.5em;
                     margin: 2em 3em 0em 3em;
+                    font-family: "Trebuchet MS" ,sans-serif;
+                    margin: 0;
+                    
+                    
     
              }
               footer p{
                     font-size: 14px;
+                    font-family: serif;
+                    font-style: oblique;
+              }
+              .rrethi{
+                    height: 25px;
+                    width: 25px;
+                    background-color: #ffffff;
+                    border-radius: 50%;
+                    display: inline-block;
+                    position: relative;
+                    left: 69%;
               }
         </style>
     </head>
     <body>
-        <header > 
+        <header class="p1"> 
            <small><a class="a" href="#">Regjistrohu |</a></small>
             <small><a class="a" href="#"> Futu |</a></small> 
             <small><a class="a" href="#"> RSS |</a></small> 
             <small><a class="a" href="#"> Lajme t&euml; vjetra</a></small>
+            <span class="rrethi"></span>
+            <span class="rrethi"></span>
+            <span class="rrethi"></span>
+            <span class="rrethi"></span>
         </header>
-        <div class="top-bar">
-            <div class="emri">Sport</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Lajmet e fundit</a></li>
-                    <li><a href="#">Futboll</a></li>
-                    <li><a href="#">Basketboll</a></li>
-                    <li><a href="#">Tenis</a></li>
-                    <li><a href="#">Golf</a></li>
-                    <li><a href="#">Boks</a></li>
-                </ul>
-            </div>
-        </div>
-        <h2 class="latest">Lajmet e fundit</h2>   
+        <center>
+        <h1>Revista Drita</h1>
+        </center>
+        <center><h2 class="revista"> Te gjitha lajmet e fundit nga bota</h2></center>
+        <hr style="margin: 0em 1em 0em 1em;">
+        <hr style="position: relative; top:-7px; margin: 0em 1em 0em 1em;">
+        <p class="menuja"><small><a href="Revista Drita.html">&nbsp;Sht&euml;pia</a> &nbsp;&nbsp; 
+            <a href="Sporti.html" style="color: red;">Sporti</a> &nbsp;&nbsp;
+            <a href="Shkenc&euml;.html">Shkenca</a> &nbsp;&nbsp;
+            <a href="Kulture.html">Kultura</a> &nbsp;&nbsp;
+            <a href="Pyet&euml;sori.html">Pyet&euml;sori</a> &nbsp;&nbsp;
+            <a href="Rreth.html"> Rreth </a> </small> </p>
+        <hr style="margin: 0em 1em 0em 1em;">
+        <hr style="position: relative; top:-7px; margin: 0em 1em 0em 1em;">    
+          
      <div class="pjesa1">   
      <figure class="fig1">
             <img  src="https://scd.france24.com/fr/files_fr/imagecache/home_1024/article/image/ballon-or-france-football-2018-modric.jpg"
@@ -286,8 +258,6 @@ and open the template in the editor.
          
          
      </div> 
-    
-        <hr>
      <div class="klasa2">
      <div class="nenklasa2">    
      <figure class="fig1">
@@ -386,16 +356,19 @@ and open the template in the editor.
               alt="messi" style="width:150px; height: 100px;">
          <figcaption class="ron1">Eden Hazard</figcaption>
          </figure>
+         
          <div class="lajmet">
              
          </div>
          
          
      </div>
-    </div>     
+    </div> 
+        <hr style="margin: 0em 1em 0em 1em;">    
      <footer>
-            <p><a href="#">Home</a> | <a href="#">Catalogu</a> |
-            <a href="#">Arikvi</a></p>
+         <small><a href="#" style="color: grey;">Sht&euml;pia</a> | 
+            <a href="#" style="color:grey;">Katalogu</a> |
+            <a href="#" style="color:grey;">Arikvi</a></small>
              <p>Te drejtat e rezervuara &copy;Fiek2018</p>
      </footer>      
      

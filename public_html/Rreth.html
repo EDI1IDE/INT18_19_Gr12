@@ -5,6 +5,14 @@
         <title>Rreth-RevistaDrita</title>
         <style>
 /*fromatimi gjeneral i teksit*/
+html,body,header,footer,hgroup,nav,article,section,figure,figcaption,h1,h2,h3,ul,li,div,p,img
+{
+                   margin: 0;
+                   padding: 0;
+                   font-size: 100%;
+                   vertical-align: baseline;
+                   border: 0;
+}
 h1,h2,h3,nav,footer
 {
     font-family: "Trebuchet MS" ,sans-serif;
@@ -23,10 +31,8 @@ h1{
     font-size: 24px;
     font-size: 1.5rem;
     color:black;
-    
     padding: 0.8em;
-    margin: 0em -2.7em 0em -2.7em;
-    
+    margin: 0;
 }
 h2{
     font-size: 25px;
@@ -34,6 +40,18 @@ h2{
 h3{
     font-size: 18px;
     border-bottom: solid 1pt #999999;
+}
+.emri{
+    font-size:5em;
+    font-weight: normal;
+    font-family: "Goudy Old Style","Times New Roman";
+    text-transform: capitalize;
+    margin-top: -0.5em;   
+}
+.emri1{
+    font-family: 'Titillium Web', sans-serif,serif;
+    margin-top: -4.2em;
+    font-size: 15px;
 }
 p{
     font-size: 16px;
@@ -44,11 +62,7 @@ nav{
 /*stilizimi i linqeve*/
 /*selektoret pseudo-klase*/
 a:link{
-    font-weight: bold;
-    color: #47b3d7;
-}
-a:visited{
-    color: #47b3d7;
+    color: white;
 }
 a:hover{
     background-color: #ffcccc;
@@ -121,14 +135,25 @@ header {
     left: 20px;
 }
 .a{
+    background-color: #333333;
+    font-family: "trebuchet ms",arial,helvetica,sans-serif;
     position: relative;
-    left: 55px;
+    bottom: 7px;
+    left: 8px;
+    text-decoration: none;
+    color: white;
+  
 }
 footer{
     color:white;
     background-color: #333333;
-   
-    
+}
+.f{
+    color: white;
+}
+.tel{
+    color: black;
+    text-decoration: none;
 }
 div img{
     border: solid 1px #999999;
@@ -174,16 +199,29 @@ p{
 }
 .menuja{
     background-color: #e0e0e0;
-    margin: 0em -4em 0em -4em;
-    color: white;
-    
+    margin: 0em 0em 0em -4em;
+    position: relative;
+    left: 12px;
+    padding: 5px;
+    top: 5px;
 }
 .menuja1{
-    position: relative;
-    left: 60px;
+    
+    text-decoration: none;
+    color: black;
+    font-family: "trebuchet ms",arial,helvetica,Georgia,"Times New Roman";
 }
 hr{
     color: black;
+}
+.rrethi{
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 830px;
 }
 /*stilizimi i footer*/
 footer{
@@ -205,22 +243,29 @@ footer p{
             <small><a class="a" href="#"> Futu |</a></small> 
             <small><a class="a" href="#"> RSS |</a></small> 
             <small><a class="a" href="#"> Lajme t&euml; vjetra</a></small>
+            <span class="rrethi"></span>
+            <span class="rrethi"></span>
+            <span class="rrethi"></span>
+            <span class="rrethi"></span>
         </header>
-        <h1>&emsp;&ensp;&nbsp;Rreth</h1>
-        <hr>
-        <hr style="position: relative; top:-7px;">
+         <center>
+        <h1 class="emri">Revista Drita</h1>
+        </center>
+        <center><h2 class="emri1"> Te gjitha lajmet e fundit nga bota</h2></center>
+        <hr style="margin: 1em -3.1em 0em -3.1em;">
+        <hr style="position: relative; top:-7px; margin: 0em -3.1em 0em -3.1em; ">
         <p class="menuja"><small>
-                <a href="Ushtrimi.html" class="menuja1">Sht&euml;pia</a>&nbsp;&nbsp;
+                <a href="Ushtrimi.html" class="menuja1">&nbsp;Sht&euml;pia</a>&nbsp;&nbsp;
                 <a href="Sporti.html" class="menuja1">Sporti</a> &nbsp;&nbsp;
                 <a href="Shkenc&euml;.html" class="menuja1">Shkenca</a> &nbsp;&nbsp;
                 <a href="Kulture.html" class="menuja1">Kultura</a> &nbsp;&nbsp;
                 <a href="Pyet&euml;sori.html" class="menuja1">Pyet&euml;sori</a> &nbsp;&nbsp;
-                <a href="#" class="menuja1"> Rreth </a> </small> </p>
-            <hr>
-            <hr style="position: relative; top:-7px;">
-            
-        <h2 align="center" style="text-decoration: underline;">Stafi jon&euml;</h2>
-        <hr>
+                <a href="#" class="menuja1" style="color:blue;" > Rreth </a> </small> </p>
+        <hr style="margin: 1em -3.1em 0em -3.1em;">
+        <hr style="position: relative; top:-7px; margin: 0em -3.1em 0em -3.1em; ">
+        
+        <h2 align="center" style="text-decoration: underline; margin-top:1em;">Stafi jon&euml;</h2>
+        <hr style="margin-top: 2em;">
         
         
         <div class="gazeta">    
@@ -270,6 +315,7 @@ footer p{
             </div>
             </div>
         </div>
+      
         <hr style="position:relative; top: 100px;">
 
         <div id="mainContact">
@@ -286,14 +332,14 @@ footer p{
        <br>
         <div id="lastViewed">
             <h3 class="ex1" >Kontakted e fundit</h3>
-            <p class="c"><a href="#" >&nbsp;Telefoni:&#128276;+38344123123</a>
-                <br> <a href="#">&nbsp;Email:&#128231;revistadrita@microsoft.com</a>
+            <p class="c"><a href="#" class="tel" >&nbsp;Telefoni:&#128276;+38344123123</a>
+                <br> <a href="#" class="tel">&nbsp;Email:&#128231;revistadrita@microsoft.com</a>
             </p>
             
         </div>
      <br>
         <footer>
-            <p><a href="#">Sht&euml;pia</a> | <a href="#">Katalogu</a></p>
+            <p><a href="#" class="f">Sht&euml;pia</a> | <a href="#" class="f">Katalogu</a></p>
              <p>Te drejtat e rezervuara &copy;Fiek2018</p>
         </footer>        
     </body>

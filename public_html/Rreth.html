@@ -16,7 +16,7 @@ html,body,header,footer,hgroup,nav,article,section,figure,figcaption,h1,h2,h3,ul
 .faqja {
     width: 100%;
     min-width: 500px;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: auto;
 }
 h1,h2,h3,nav,footer
@@ -211,20 +211,43 @@ p{
     color: black;
     font-family: "trebuchet ms",arial,helvetica,Georgia,"Times New Roman";
 }
-hr{
-    color: black;
+/* stilizimi i formes */
+/* Stilizimi i inputeve me type text*/
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-.rrethi{
-    height: 25px;
-    width: 25px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-    left: 69%; 
+
+/* Stizilimi i butonit Dergo */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Kalimi me maus ne butonin Dergo behet ngjyre e gjelber me e zeze */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Ngjyra e formes dhe padding */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 /*stilizimi i footer*/
 footer{
+    margin-top: 1em;
     padding: 0.5em;
     font-weight: normal;
     font-style: oblique;   
@@ -341,6 +364,29 @@ footer p{
             
         </div>
      <br>
+     <div class="container">
+    <form action="action_page.php">
+
+        <label for="emri">Emri</label>
+        <input type="text" id="emri" name="emri" placeholder="Emri juaj..">
+
+        <label for="mbiemri">Mbiemri</label>
+        <input type="text" id="mbiemri" name="mbiemri" placeholder="Mbiemri juaj..">
+
+        <label for="shteti">Shteti</label>
+    <select id="shteti" name="shteti">
+        <option value="australia">Shqip&euml;ria</option>
+        <option value="canada">Kosova</option>
+        <option value="usa">Maqedonia</option>
+    </select>
+
+        <label for="subjekti">Subjekti</label>
+        <textarea id="subjekti" name="subjekti" placeholder="Shenoni ketu ..." style="height:200px"></textarea>
+
+        <input type="submit" value="Dergo">
+
+    </form>
+</div>
         <footer>
             <p><a href="#" class="f">Sht&euml;pia</a> | <a href="#" class="f">Katalogu</a></p>
              <p>Te drejtat e rezervuara &copy;Fiek2018</p>

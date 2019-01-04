@@ -65,6 +65,10 @@ p{
 nav{
     font-size: 18px;
 }
+.stafi{
+    height: 30px;
+    text-align: center;
+}
 /*stilizimi i linqeve*/
 a:link{
     color: white;
@@ -226,17 +230,18 @@ input[type=text], select, textarea {
 
 /* Stizilimi i butonit Dergo */
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
+  background-image: linear-gradient(white,grey);
+  color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: 3px 3px 5px grey;
 }
 
-/* Kalimi me maus ne butonin Dergo behet ngjyre e gjelber me e zeze */
+/* Kalimi me maus ne butonin Dergo ndryshohet gradienti */
 input[type=submit]:hover {
-  background-color: #45a049;
+   background-image: linear-gradient(grey,black);
 }
 
 /* Ngjyra e formes dhe padding */
@@ -286,11 +291,12 @@ footer p{
                 <a href="Shkenc&euml;.html" class="menuja1">Shkenca</a> &nbsp;&nbsp;
                 <a href="Kulture.html" class="menuja1">Kultura</a> &nbsp;&nbsp;
                 <a href="Pyet&euml;sori.html" class="menuja1">Pyet&euml;sori</a> &nbsp;&nbsp;
-                <a href="#" class="menuja1" style="color: red;" > Rreth </a> </small> </p>
+                <a href="#" class="menuja1" style="color: black;text-shadow: 2px 2px 5px red;" > Rreth </a> </small> </p>
         <hr style="margin: 1em -3.1em 0em -3.1em;">
         <hr style="position: relative; top:-7px; margin: 0em -3.1em 0em -3.1em; ">
-        
-        <h2 align="center" style="text-decoration: underline; margin-top:1em;">Stafi jon&euml;</h2>
+        <div class="stafi">
+        <h2 style="margin-top:1em; font-family: Georgia; text-shadow: 2px 2px 5px grey;">Stafi jon&euml;</h2>
+        </div>
         <hr style="margin-top: 2em;">
         
         

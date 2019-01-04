@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset = "utf-8">
+      <meta name="viewport" content="width-device-width,initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>TOP10 Shkenctaret</title>
+      <style>
+      body{
+          margin:0;
+          font-family:Arial,Helvetica,sans-serif;
+      }
+      table{
+          text-align:center;
+      }
+      th{
+          background-color:#333;
+          color:#fff;
+          padding:2px;
+          border:2px #000 solid;
+      }
+      td{
+          padding:6px;
+          border:2px #000 solid;
+      }
+
+      </style>
+   </head>
+   <body>
+       <div id="text"></div>
+       <script>
+       var emri=['Isaac Newton','Louis Pasteur',
+       'Galileo Galilei ','Marie Curie','Albert Einstein',
+       'Charles Darwin','Otto Hahn','James Clerk Maxwell',
+       'Nikola Tesla','Aristotle'];
+       var jetoi=['(1643- 1726)','(1822 – 1895)','(1564-1642)',
+       '(1867 –  1934)','(1879-1955)','(1809 – 1882)','(1879-1968)',
+       '(1831 –1879)','(1856 –1943)','(384 – 322)'];
+       var  profesioni=['Shpikes','Shpikes','Shpikes','Shpikes','Shpikes','Shpikes','Shpikes',
+       'Shpikes','Shpikes','Shpikes'];
+       var text=document.getElementById('text');
+       var table='<table><thead><tr><th>top10</th><th>Emrat</th><th>Jetuan</th><th>Profesionet</th></tr></thead><tbody>';
+       for(var i=0;i<emri.length;i++){
+           table +='<tr><td>'+(i+1)+'</td><td>'+emri[i]+'</td><td>'+jetoi[i]+'</td><td>'+profesioni[i]+'</td></tr>';
+       }
+       table +='</tbody></table>';
+       text.innerHTML=table;
+       </script>
+   </body>
+</html>

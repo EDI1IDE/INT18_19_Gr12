@@ -16,6 +16,12 @@ and open the template in the editor.
                    background-color: #e0e0e0;
                    font-size: 100%;
               }
+              .faqja{
+                  width: 100%;
+                  min-width: 500px;
+                  max-width: 1400px;
+                  margin: auto;
+              }
               h1{
                    font-size:5em;
                    font-weight: normal;
@@ -40,14 +46,16 @@ and open the template in the editor.
               header{
                 color:white;
                 background-color: #373737;
-                padding: 8px;
+                padding: 0.8em;
+                position: relative;
               }
               .a{
-                   text-decoration: none;
-                   color: white;
-                   position: relative;
-                   bottom: 7px;
-                   left: 8px;
+                  background-color: #333333;
+                  font-family: "trebuchet ms",arial,helvetica,sans-serif;
+                  position: relative;
+                  left: 2px;
+                  text-decoration: none;
+                  color: white;
                }
               footer{
                 color: grey;
@@ -79,11 +87,17 @@ and open the template in the editor.
               }
               .pjesa1{
                   display: flex;
-                  flex: 1;
-                  
+                  margin-bottom: 0;
               }
               .pjesa2{
                   flex: 1;
+              }
+              .pjes1{
+                  flex: 1;
+              }
+              .fotopjesa1{
+                  flex: 1;
+                  margin-right: 0em;
               }
               .fotopjesa1 ul li{
                   margin-top: 1em;
@@ -93,7 +107,7 @@ and open the template in the editor.
               /* klasa 3 */
               .klasa3{
                   display: flex;
-                  margin: 1em 1em 1em 0em;
+                  margin: 1em 0em -3em 0em;
               }
               .shaqiri{
                   float: right;
@@ -104,7 +118,7 @@ and open the template in the editor.
               }
               .kampion{
                   float: right;
-                  margin: 1em 1em 0em 1em;
+                  margin: 1em 0em 0em 1em;
               }
               
               .kosova{
@@ -135,15 +149,6 @@ and open the template in the editor.
                   width: 500px;
                   height: 50px;
               }
-              .ajax{
-                  margin: 1em 1em 1em 3em;
-              }
-              .fajax{
-                  position: relative;
-                  top: -105px;
-                  left: 160px;
-                  width: 70%;
-              }
               div img{
                   border: solid 1px #999999;
               }
@@ -171,22 +176,33 @@ and open the template in the editor.
               /* stilizimi i kl 2 */
               .klasa2{
                   display: flex;
-                  
+                  margin-bottom: -3em;
               }
               .nenkl2{
                  margin: 1em 0em 0em 2em;
+                 flex: 1;
+              }
+              .nenk2{
+                  flex: 1;
               }
               .nenkl2 ul li {
                   list-style: none;
                   
                   
               }
+              .nenkl3{
+                  flex: 1;
+                  margin-right: 0;
+              }
+              .nenklasa3{
+                  flex:1;
+              }
               .nenklasa3 ul li {
                   list-style: none;
               }
               footer{
                     padding: 0.5em;
-                    margin: 2em 3em 0em 3em;
+                    margin: 2em 0em 0em 3em;
                     font-family: "Trebuchet MS" ,sans-serif;
                     margin: 0;
                     
@@ -210,12 +226,13 @@ and open the template in the editor.
         </style>
     </head>
     <body>
-        <header class="p1"> 
+        <div class="faqja">
+        <header> 
            <small><a class="a" href="#">Regjistrohu |</a></small>
             <small><a class="a" href="#"> Futu |</a></small> 
             <small><a class="a" href="#"> RSS |</a></small> 
             <small><a class="a" href="#"> Lajme t&euml; vjetra</a></small>
-            <svg height="30" width="130" style="position:relative; right:-67.7%;">
+            <svg height="30" width="130" style="position:absolute; right:8px; bottom: 7px;">
             <circle cx="20" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
             <circle cx="50" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
             <circle cx="80" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
@@ -237,11 +254,12 @@ and open the template in the editor.
         <hr style="margin: 0em 1em 0em 1em;">
         <hr style="position: relative; top:-7px; margin: 0em 1em 0em 1em;">    
           
-     <div class="pjesa1">   
+     <div class="pjesa1">
+     <div class="pjes1">    
      <figure class="fig1">
             <img  src="https://scd.france24.com/fr/files_fr/imagecache/home_1024/article/image/ballon-or-france-football-2018-modric.jpg"
                  alt="modric" style="width:500px;height:320px;"/>
-            <figcaption class="figura1" style="margin-top:0.5em;">Modriqi fiton Topin e Art&euml; 2018
+            <figcaption style="margin-top:0.5em;">Modriqi fiton Topin e Art&euml; 2018
             <p class="k1" style="margin-top: 0.5em;">Kroati arriti q&euml; t&euml; prish&euml; serin&euml; e triumfeve nga Cristiano Ronaldo dhe Lionel Messi, 
                 duke marr&euml; çmimin prestigjioz fal&euml; suksesit n&euml;
                 Lig&euml;n e Kampion&euml;ve dhe arritjes n&euml; finale t&euml; Bot&euml;rorit me Kroacin&euml;.
@@ -249,33 +267,35 @@ and open the template in the editor.
             </figcaption>
             
      </figure>
+     </div>
          <div class="fotopjesa1">    
              <ul>
              <li><img  class="f1" src="https://cdn.ghanasoccernet.com/2018/05/609826-73dcafa65e98db62f5115f2fcb94f089.jpg"
                        alt="pavard" style="width:150px;height:100px;"/>
-                 <p style="float: right; font-weight: bold; clear: right; position: relative; left: -5px;">Barcelona n&euml; bisedime me Pavardin</p>
-                 <p style="width:450px; height: 60px; position: relative; top: -80px; left:185px;">Barcelona &euml;sht&euml; takuar me p&euml;rfaq&euml;sues 
+                 <p style="width:350px;font-weight: bold; position: relative; top: -115px; left: 185px;">Barcelona n&euml; bisedime me Pavardin</p>
+                 <p style="width:350px; height: 60px; position: relative; top: -100px; left:185px;">Barcelona &euml;sht&euml; takuar me p&euml;rfaq&euml;sues 
                      t&euml; Stuttgartit p&euml;r mbrojt&euml;sin francez Benjamin Pavard,
                      shkruan Gianluca Di Marzio.</p>
              </li>
              <li><img class="f1"  src="https://i2-prod.manchestereveningnews.co.uk/incoming/article15360173.ece/ALTERNATES/s615/0_GettyImages-1044728682.jpg"
-                       alt="valencia" style="width:150px;height:100px; margin-top: -1.7em;"/>
-                 <p style="float: right; font-weight: bold; clear: right; margin-top: -1.7em; position: relative; left: 25px;">Interi mendon transferimin e Valencias</p>
-                 <p style="width:450px; height: 60px; position: relative; top: -80px; left:185px;">Mbrojt&euml;si i Manchester Unitedit, Antonio Valencia, 
+                       alt="valencia" style="width:150px;height:100px; margin-top: -3.5em;"/>
+                 <p style="width:350px;font-weight: bold; margin-top: -2em; position: relative; left: 185px; top: -83px;">Interi mendon transferimin e Valencias</p>
+                 <p style="width:350px; height: 60px; position: relative; top: -70px; left:185px;">Mbrojt&euml;si i Manchester Unitedit, Antonio Valencia, 
                      raportohet se &euml;sht&euml; duke u monitoruar nga klubi i Interit.</p>
              </li>
                  
              <li><img class="f1" src="https://cdn-s3.si.com/s3fs-public/2019/01/02/james-harden-rockets-lead-mvp-campaign.jpg"
                        alt="harden" style="width:150px;height:100px; margin-top: -1.7em;"/>
-                 <p style="float: right; font-weight: bold; clear: right; margin-top: -1.7em; position: relative; left: 2px;">Hardeni ia siguron fitoren Houstonit</p>
-                 <p style="width:450px; height: 60px; position: relative; top: -80px; left:185px;">James Harden e regjistroi triple-doublein e dyt&euml; rresht dhe 
+                 <p style="width:350px;font-weight: bold; margin-top: -1.7em; position: relative; left: 185px; top:-88px;">Hardeni ia siguron fitoren Houstonit</p>
+                 <p style="width:350px; height: 60px; position: relative; top: -80px; left:185px;">James Harden e regjistroi triple-doublein e dyt&euml; rresht dhe 
                      realizoi nj&euml; trepik&euml;sh nga larg&euml;sia nj&euml; sekond&euml; para se t&euml; p&euml;rfundonin vazhdimet, 
-                     p&euml;r t’i dh&euml;n&euml; fitoren Houstonit ndaj kampionit n&euml; fuqi, Golden State Warriors, n&euml; Oakland, 135:134.</p>
+                     p&euml;r t’i dh&euml;n&euml; fitoren Houstonit ndaj kampionit n&euml; fuqi</p>
              </li>
              </ul>
          </div>  
      </div> 
-     <div class="klasa2">    
+     <div class="klasa2">
+     <div class="nenk2">    
      <figure class="fig1">
             <img src="https://cdn.cnn.com/cnnnext/dam/assets/150330124811-shaqiri-2-exlarge-169.jpg"
                  alt="zvicra" style="width:500px;height:320px; margin-top: -2em;"/>
@@ -287,29 +307,30 @@ and open the template in the editor.
                 </p>
             </figcaption>
      </figure>
+     </div>
          <div class="nenkl2">
              <ul>
                  <li><img class="f1" src="http://www.juventus.com/media/images/news-images/2018-19/partite/allegri_juve-manutd_071118.jpg" alt="allegri"
                   style="width:150px;height:100px; margin-top: -2em; margin-left: 1.9em;"/>
-                <p style="float:right;font-weight: bold; position: relative; top: -30px; left: -53px; clear: right;">
+                <p style="width:350px;font-weight: bold; position: relative; top: -115px; left: 215px;">
                     Juventusi gati “t&euml; blindoj&euml;” trajnerin Allegri</p>
-                <p style="width: 440px; height:60px; position: relative; top:-80px; left:215px;">E ardhmja e trajnerit Maxi Allegri, 
+                <p style="width: 350px; height:60px; position: relative; top:-100px; left:215px;">E ardhmja e trajnerit Maxi Allegri, 
                     pritet të jet&euml; n&euml; Juventus, 
                     me gjith&euml; spekulimet e shumta p&euml;r t&euml; ardhmen e tij.</p>
                  </li>
                  <li><img class="f1" src="https://www.shropshirestar.com/resizer/fLtDGpBdXsJUYUhfadR7KbyoWVs=/1000x0/filters:quality(100)/arc-anglerfish-arc2-prod-shropshirestar-mna.s3.amazonaws.com/public/LKLMEDSDGVC43BCKNAXYQTG6LA.jpg" alt="solskajer"
-                  style="width:150px;height:100px; margin-top: -0.8em; margin-left: 1.9em;"/>
-                <p style="width:440px;float:right;font-weight: bold; position: relative; top: -10px; left: 24px; clear: right;">
+                  style="width:150px;height:100px; margin-top: -3.2em; margin-left: 1.9em;"/>
+                <p style="width:350px;font-weight: bold; position: relative; top: -115px; left: 215px;">
                     Unitedi vazhdon form&euml;n e lart n&euml; lig&euml;</p>
-                <p style="width: 440px; height:60px; position: relative; top:-80px; left:215px;">Manchester Unitedi ka sh&euml;nuar fitoren e
+                <p style="width: 350px; height:60px; position: relative; top:-100px; left:215px;">Manchester Unitedi ka sh&euml;nuar fitoren e
                     kat&euml;rt radhazi n&euml; Premier Lig&euml;,
                     duke e mposhtur n&euml; udh&euml;tim Newcastle Unitedin me rezultat prej 0-2</p>
                  </li>
                  <li><img class="f1" src="https://pbs.twimg.com/media/DljQ8c2WsAMlAV_.jpg" alt="arianit"
-                  style="width:150px;height:100px; margin-top: -0.8em; margin-left: 1.9em;"/>
-                <p style="float:right;font-weight: bold; position: relative; top: -10px; left: -25px; clear: right;">
+                  style="width:150px;height:100px; margin-top: -2.6em; margin-left: 1.9em;"/>
+                <p style="width: 350px;font-weight: bold; position: relative; top: -115px; left: 215px;">
                     Muriqi, heroi i Cityt n&euml; penaltit&euml; me Leicesterin</p>
-                <p style="width: 440px; height:60px; position: relative; top:-80px; left:215px;">Portieri i përfaq&euml;sueses s&euml; Kosov&euml;s,
+                <p style="width: 360px; height:60px; position: relative; top:-100px; left:215px;">Portieri i përfaq&euml;sueses s&euml; Kosov&euml;s,
                     Arjanet Muriqi ia ka siguruar
                     Manchester Cityt gjysm&euml;finalen e kup&euml;s EFL pasi ka pritur dy penalti.</p>
                  </li>
@@ -317,7 +338,8 @@ and open the template in the editor.
          </div>
      </div>
         <h2 class="latest">Lajmet m&euml; t&euml; lexuara</h2>
-     <div class="klasa3">    
+     <div class="klasa3">
+     <div class="nenkl3">    
      <figure class="fig1">
             <img  src="http://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F0910%2Fr429092_1296x729_16-9.jpg"
                  alt="kosova" style="width:500px;height:320px;"/>
@@ -332,30 +354,30 @@ and open the template in the editor.
                 </p>
             </figcaption>
      </figure>
-     
+     </div>
      <div class="nenklasa3">  
          <ul>
              <li><img class="f1" src="http://as01.epimg.net/en/imagenes/2016/09/05/football/1473111454_765161_1473111578_noticia_normal.jpg"
-              alt="Ks" style="width:150px; height: 100px; margin: 1em 1em 0em 3.9em;">
-                 <p style="font-weight: bold; float: right; position: relative; top: 15px; left:-64px; clear:right;">
+              alt="Ks" style="width:150px; height: 100px; margin: 1em 0em 0em 2.9em;">
+                 <p style="width:350px;font-weight: bold; position: relative; top: -115px; left:230px;">
                      Kosova, sensacioni i vitit 2018 n&euml; futboll</p>
-                 <p style=" width:440px;position:relative; left:245px; top:-80px;">
+                 <p style=" width:350px;position:relative; left:230px; top:-100px;">
                      “Dardan&euml;t” shkruan histori, duke p&euml;rfunduar n&euml; vendin e par&euml; t&euml; grupit t&euml; tret&euml;
                      t&euml; Lig&euml;s D t&euml; Kombeve.</p>
              </li>
              <li><img class="f1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVzQzm9nvDKtWt6bgCLp8bgDRM5OXRbmPvb9D9kP9_HsjOPF-5lw"
-              alt="xhaka" style="width:150px; height: 100px;  margin: 2em 1em 0em 3.9em; float:bottom;">
-                 <p style="width: 440px;font-weight:bold; position:relative; left:245px; top: -115px;">
+              alt="xhaka" style="width:150px; height: 100px;  margin: 0em 0em 0em 2.9em;">
+                 <p style="width: 350px;font-weight:bold; position:relative; left:230px; top: -115px;">
                     Xhaka, golash&euml;nues n&euml; fitoren e thell&euml; t&euml; Arsenalit</p>
-                 <p style="width: 440px;position:relative; left:245px; top: -95px;">
+                 <p style="width: 350px;position:relative; left:230px; top: -105px;">
                     Mesfushori shqiptar, Granit Xhaka ishte n&euml; mesin e realizuesve
                     n&euml; fitoren e Arsenalit ndaj Fulhamit me rezultat 4 me 1.</p>
              </li>
              <li><img class="f1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSug3toqjVXPUBeepIbj2MFhiVmNDS24l3gnFdIiPUSf3XW5Co9"
-              alt="Icardi" style="width:150px; height: 100px; margin: 1em 1em 0em 3.9em;">
-                 <p style="font-weight: bold; float: right; position: relative; top: 15px; left:5px; clear:right;">
+              alt="Icardi" style="width:150px; height: 100px; margin: -1em 0em 0em 2.9em;">
+                 <p style="width:350px;font-weight: bold;position: relative; top: -115px; left:230px;">
                     Icardi shpreson t&euml; kaloj&euml; tek Manchester Unitedi</p>
-                 <p style=" width:440px;position:relative; left:245px; top:-80px;">
+                 <p style=" width:350px;position:relative; left:230px; top:-100px;">
                      Edhe pse kishte nj&euml; interesim p&euml;r sulmuesin e Interit nga Real Madridi,
                      Icardi shpreson q&euml; k&euml;t&euml; ver&euml; t&euml; kaloj tek Manchester United</p>
              </li>
@@ -406,6 +428,6 @@ and open the template in the editor.
             <a href="#" style="color:grey;">Arikvi</a></small>
             <p>&nbsp;&nbsp;Te drejtat e rezervuara &copy;Fiek2018</p>
      </footer>      
-     
+        </div>
     </body>
 </html>

@@ -2,16 +2,22 @@
 <html>
     <head lang="en">
         <meta charset="utf-8">
+        
         <title>Rreth-RevistaDrita</title>
         <style>
 /*fromatimi gjeneral i teksit*/
 html,body,header,footer,hgroup,nav,article,section,figure,figcaption,h1,h2,h3,ul,li,div,p,img
 {
-                   margin: 0;
-                   padding: 0;
-                   font-size: 100%;
-                   vertical-align: baseline;
-                   border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: 0;
+}
+.faqja {
+    width: 100%;
+    min-width: 500px;
+    max-width: 1400px;
+    margin: auto;
 }
 h1,h2,h3,nav,footer
 {
@@ -60,7 +66,6 @@ nav{
     font-size: 18px;
 }
 /*stilizimi i linqeve*/
-/*selektoret pseudo-klase*/
 a:link{
     color: white;
 }
@@ -73,18 +78,18 @@ header {
     background-color: #333333;
     padding: 0.5em;
     margin: 0em -4em 0em -4em;
+    position: relative;
  
 }
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* Kontenjeri i flip kardes per te caktuar gjeresine dhe gjatesine */
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  height: 270px;
+  perspective: 1000px; /* Efekti 3d */
 }
 
-/* This container is needed to position the front and back side */
+/* Kontenjeri per pozicionimin e pjeses mbrapa dhe para */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -94,12 +99,12 @@ header {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Ben nje kthim horizondal kur kalojm me mous te flip card */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
+/* Pozicionimi i pjeses perpara dhe mbrapa */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -107,13 +112,13 @@ header {
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
+/*Stilizimi perpara i filp card  */
 .flip-card-front {
   background-color: #bbb;
   color: black;
 }
 
-/* Style the back side */
+/*Stilizimi mbrapa i flip card */
 .flip-card-back {
   background-color: lightblue;
   color: white;
@@ -162,13 +167,13 @@ div img{
     background-color: #7d7d7d;
     padding: 15px;
     color: white;
-    margin: 6em 0em 0em 0em;
+    margin-top: 4em;
 }
 .ex1{
     background-color: #7d7d7d;
     padding: 15px;
     color: white;
-    margin: 1em 0em 0em 0em;
+    margin-top: 1em;
     
     
 }
@@ -181,11 +186,6 @@ div img{
 .c{
     border: solid 1px #000000;
 }
-
-
-
-/*stilizimi i artikullit*/
-
 p{
     margin: 0 0 0.5em 0;
 }
@@ -221,7 +221,8 @@ hr{
     border-radius: 50%;
     display: inline-block;
     position: relative;
-    left: 830px;
+    left: 69%;
+   
 }
 /*stilizimi i footer*/
 footer{
@@ -238,6 +239,7 @@ footer p{
         </style>
     </head>
     <body>
+        <div class="faqja">
         <header> 
            <small><a class="a" href="#">Regjistrohu |</a></small>
             <small><a class="a" href="#"> Futu |</a></small> 
@@ -260,7 +262,7 @@ footer p{
                 <a href="Shkenc&euml;.html" class="menuja1">Shkenca</a> &nbsp;&nbsp;
                 <a href="Kulture.html" class="menuja1">Kultura</a> &nbsp;&nbsp;
                 <a href="Pyet&euml;sori.html" class="menuja1">Pyet&euml;sori</a> &nbsp;&nbsp;
-                <a href="#" class="menuja1" style="color:blue;" > Rreth </a> </small> </p>
+                <a href="#" class="menuja1" style="color: red;" > Rreth </a> </small> </p>
         <hr style="margin: 1em -3.1em 0em -3.1em;">
         <hr style="position: relative; top:-7px; margin: 0em -3.1em 0em -3.1em; ">
         
@@ -272,7 +274,7 @@ footer p{
             <div class="flip-card">
             <div class="flip-card-inner">
             <div class="flip-card-front">
-                     <img  class="M" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVy1TuWSYIlh3FoopcRyHg1ve81Z0TcSJ7NZ63Ml_ckqupmnQc" alt="Avatar"
+                     <img  class="M" src="Fotot/foto1.png" alt="Muhamedi"
                           style="width:300px;height:270px;">
             </div>
             <div class="flip-card-back">
@@ -286,8 +288,8 @@ footer p{
             <div class="flip-card">
             <div class="flip-card-inner">
             <div class="flip-card-front">
-                     <img class="M" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeHIJZ1iCekNOXGPS_FZAkEZ0HMQmEIuixTrclzKOFPABdrhQE"
-                          alt="Avatar" style="width:300px;height:270px;">
+                     <img class="M" src="Fotot/foto2.jpg"
+                          alt="Ndriqim" style="width:300px;height:270px;">
             </div>
             <div class="flip-card-back">
                 <h1>Ndri&ccedil;im Hajrullahu</h1>
@@ -303,8 +305,8 @@ footer p{
             <div class="flip-card">
             <div class="flip-card-inner">
             <div class="flip-card-front">
-                     <img class="M" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDTWf_YD5jOJF3o4GfmpC7OEt07Sl0O_iOXw5qQ3ag6FNYjHuu"
-                          alt="Avatar" style="width:300px;height:270px;" >
+                     <img class="M" src="Fotot/foto3.jpg"
+                          alt="Ndriqa" style="width:300px;height:270px;" >
             </div>
             <div class="flip-card-back">
             <h1>Ndriqim Muhadri</h1> 
@@ -316,7 +318,7 @@ footer p{
             </div>
         </div>
       
-        <hr style="position:relative; top: 100px;">
+        <hr style="position:relative; top: 30px;">
 
         <div id="mainContact">
             <h3 class="ex">Detajet Personale</h3>
@@ -341,6 +343,8 @@ footer p{
         <footer>
             <p><a href="#" class="f">Sht&euml;pia</a> | <a href="#" class="f">Katalogu</a></p>
              <p>Te drejtat e rezervuara &copy;Fiek2018</p>
-        </footer>        
+        </footer>   
+        </div> 
     </body>
+
 </html>

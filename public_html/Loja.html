@@ -171,6 +171,24 @@
                 Shfletuesi juaj nuk e perkrah elementin audio!
                 </audio>
                 <script type="text/javascript" src="Loja.js"></script>
+                
+                <p><small>Shtypni tastin p&euml;r t&euml; par&euml; se ku jeni</small></p>
+                <button onclick="getLocation()">Vendndodhja</button>
+                <p id="vendndodhja"></p>
+                <script>
+                    var harta = document.getElementById("vendndodhja");
+                    function getLocation() {
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(showPosition);
+                        } 
+                        else{ 
+                            harta.innerHTML = "Gjeolokacioni nuk mb\u00ebshtetet nga shfletuesi juaj";
+                        }
+                    }
+                    function showPosition(position) {
+                    harta.innerHTML = "Gjer\u00ebsia Gjeografike: " + position.coords.latitude + "<br>Gjat\u00ebsia Gjeografike: " + position.coords.longitude;
+                    }
+                </script>
            </center>
         </div>
     </article>

@@ -2,6 +2,7 @@ var canvas = document.getElementById('canvas');
 if (canvas.getContext && canvas.getContext('2d'))
 var ctx = canvas.getContext('2d');
 (function () {
+    
     var baza = null;
     window.requestAnimFrame = (function() {
         return window.requestAnimationFrame ||

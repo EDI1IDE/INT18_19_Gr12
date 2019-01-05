@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Kultura-Revista Drita</title>
+        <title>Kultura</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/9e/8e/ab/9e8eab9ddabbefcb22a6365a9ff71311.png" sizes="16x16" />
@@ -227,13 +227,25 @@
     rgb(90, 90, 90);
 }
         </style>
+         <script>        
+        #paraqit,#paneli { 
+            padding: 5px;
+            text-align: center;
+            bacground-color: #e5eecc;
+            border: solid 1px #999999;
+        }
+        #paneli {
+            pading: 50px;
+            display: none;
+        }
+        </script>
     </head>
     <body>
         <div class="faqja">
         <header>
            <small><a class="a" href="Regjistrimi.html">Regjistrohu</a></small>
             <p class="lidhja" style="display: inline"><small>|</small></p>
-            <small><a class="a" onclick="document.getElementById('kyqja').style.display='block'">Futu</a></small>
+            <small><a class="a" href="#">Futu</a></small>
             <p class="lidhja" style="display: inline"><small>|</small></p>
             <small><a class="a" href="https://rss.com/">RSS</a></small>
             <p class="lidhja" style="display: inline"><small>|</small></p>
@@ -245,29 +257,6 @@
             <circle cx="110" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
             </svg>
         </header>
-        <div id="kyqja" class="futja">
-
-            <form class="futjaB">
-                <div class="imgKapsula">
-                    <span onclick="document.getElementById('kyqja').style.display='none'" class="mbyll" title="Close Modal">&times;</span>
-                    <img src="https://theater-masks.com/wp-content/uploads/2016/04/raven-mask-profile.jpg" alt="Foto" style="width: 30%">
-                </div>
-
-                <div style="padding: 15px;">
-                    <label><b>Nofka</b></label>
-                    <input type="text" placeholder="Fusni Nofk&euml;n" required>
-
-                    <label><b>Fjalkalimi</b></label>
-                    <input type="password" placeholder="Fusni Fjalkalimin" required>
-
-                    <button type="submit">Hyr&euml;</button>
-
-                    <label>
-                    <input type="checkbox" checked="checked" name="remember"> M&euml; kujto!
-                    </label>
-                </div>
-            </form>
-        </div>
 
         <center>
         <h1>Revista Drita</h1>

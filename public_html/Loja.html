@@ -173,9 +173,32 @@
                 <br>
                 <button onclick="getLocation()">Gjeni Vendndodhjen</button>
                 <p id="vendndodhja"></p>
-              
+                
+                <p><button onclick="clickCounter()" type="button">Shtyp!</button></p>
+                <div id="rezultatiK"></div>
+                <p>Provoni t&euml; shtypni sa m&euml; shpejt&euml;!</p>
+                <br>
+                <p id="prova"></p>
                 
                 <script type="text/javascript" src="Loja.js"></script>
+                
+                <script>
+                    function clickCounter() {
+                        if(typeof(Storage) !== "undefined") {
+                            if (localStorage.clickcount) {
+                                localStorage.clickcount = Number(localStorage.clickcount)+1;
+                            }
+                            else{
+                                localStorage.clickcount = 1;
+                            }
+                            document.getElementById("rezultatiK").innerHTML = "Keni shtypur tastin " + localStorage.clickcount + " her\u00eb!";
+                            }
+                        else{
+                            document.getElementById("rezultatiK").innerHTML = "Shfletuesi juaj nuk e mb\u00ebshtet k\u00ebt\u00eb!";
+                        }
+                    }
+                </script>
+                
                 <script>
                     var harta = document.getElementById("vendndodhja");
                     function getLocation() {
@@ -190,8 +213,25 @@
                     harta.innerHTML = "Gjer\u00ebsia Gjeografike: " + position.coords.latitude + "<br>Gjat\u00ebsia Gjeografike: " + position.coords.longitude;
                     }
                 </script>
+                
+                <script>
+                    try {
+                        adddlert("Welcome guest!");
+                    }
+                    catch(err) {
+                        document.getElementById("prova").innerHTML = err.message;
+                    }
+                </script>
            </center>
         </div>
     </article>
+            <script type="text/javascript">
+                var currentTime = new Date().getHours();
+                if (7 <= currentTime && currentTime < 20) {
+                    if (document.body) {
+                        document.body.background = "https://wallpapercave.com/wp/wp3049572.jpg";
+                    }
+                }
+            </script>
     </body>
 </html>

@@ -72,6 +72,29 @@
                 left: 69%;
             }
         </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="jquery-1.11.2.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("#paraqit").click(function(){
+                $("#paneli").slideToggle("slow");
+                $("#paraqit").text("Shtyp p\u00ebr t\u00eb hapur apo mbyllur shpjegimin!");
+            });
+        });
+        </script>
+        
+        <script>        
+        #paraqit,#paneli { 
+            padding: 5px;
+            text-align: center;
+            bacground-color: #e5eecc;
+            border: solid 1px #999999;
+        }
+        #paneli {
+            pading: 50px;
+            display: none;
+        }
+        </script>
     </head>
     
     <body>
@@ -112,7 +135,8 @@
             <canvas id="canvas" width="400" height="250">
                 Nuk ju shfaqet asgj&euml;! Provojeni n&euml; nj&euml; shfletues tjet&euml;r.
             </canvas>
-                <p><b><small>Shigjetat majtas, djathtas dhe sip&euml;rfaqja e miut</small></b></p>
+                <div id="paraqit">Shtyp p&euml;r t&euml; mbyllur shpjegimin!</div>
+                <div id="paneli"><p><b><small>Shigjetat majtas, djathtas dhe sip&euml;rfaqja e miut</small></b></p></div>
                 <audio autoplay loop controls>
                 <source src="https://www.mfiles.co.uk/mp3-downloads/franz-liszt-liebestraum-3-easy-piano.mp3">
                 Shfletuesi juaj nuk e perkrah elementin audio!

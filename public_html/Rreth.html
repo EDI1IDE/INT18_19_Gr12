@@ -276,8 +276,31 @@ footer p{
         margin-bottom: 1em;
     }
 }
+/*stilizimi i drag and drop */
+#div1, #div2 {
+  float: right;
+  width: 100px;
+  height: 35px;
+  margin: 18px 5px 0px 0px;
+  padding: 10px;
+  border: 1px dashed white;
+}
+</style>
+<script>
+  function allowDrop(ev) {
+  ev.preventDefault();
+}
 
-        </style>
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
     </head>
     <body>
         <div class="faqja">
@@ -409,7 +432,16 @@ footer p{
         <input type="submit" value="Dergo">
 
     </form>
+         
 </div>
+     <div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+             <img src="http://www.name-doctor.com/nomi.png/20840.png" alt="drita"
+                  draggable="true" ondragstart="drag(event)" id="drag1" width="92" height="35">
+            </div>
+
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+     </div>
         <footer>
             <p><a href="#" class="f">Sht&euml;pia</a> | <a href="#" class="f">Katalogu</a></p>
              <p>Te drejtat e rezervuara &copy;Fiek2018</p>

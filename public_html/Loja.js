@@ -18,13 +18,13 @@ var ctx = canvas.getContext('2d');
     var Pamja = {
         hyrja: function() {
             this.text = 'Loja e Gjuajtjes';
-            this.textSub = 'Trokit për të filluar';
+            this.textSub = 'Trokit p\u00ebr t\u00eb filluar';
             this.textColor = 'white';
             this.krijo();
         },
         fundi: function() {
             this.text = 'Loja Mbaroi';
-            this.textSub = 'Trokit për të rifilluar';
+            this.textSub = 'Trokit p\u00ebr t\u00eb rifilluar';
             this.textColor = 'red';
             this.krijo();
         },
